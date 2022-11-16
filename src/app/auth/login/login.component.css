@@ -1,11 +1,13 @@
 form {
     width: 600px;
+    margin: 25% auto 25% auto;
 }
 
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
+
 
 @-webkit-keyframes animatezoom {
     from {
