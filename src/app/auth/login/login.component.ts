@@ -7,6 +7,24 @@ import { AuthentificationService } from '../auth.service';
 import { DatabaseService } from '../../database-service/database.service';
 import { User } from '../../database-service/user';
 
+import { initializeApp } from "firebase/app";
+import { getFirestore , doc, onSnapshot, addDoc, collection, getDoc} from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDZ273ywvo3Jzs4UUy7KIUiGCTUDCA6aqs",
+  authDomain: "proiect-tw01.firebaseapp.com",
+  databaseURL: "https://proiect-tw01-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "proiect-tw01",
+  storageBucket: "proiect-tw01.appspot.com",
+  messagingSenderId: "775115098883",
+  appId: "1:775115098883:web:8bdd45ae8448e50492b736",
+  measurementId: "G-JZT5TWN5T3"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
@@ -28,7 +46,7 @@ export class LoginComponent implements OnInit {
     password: "",
   }
 
-  constructor( private db: DatabaseService, private router: Router, private auth:AuthentificationService) {}
+  constructor(   private router: Router, private auth:AuthentificationService) {}
 
   ngOnInit(): void {}
 

@@ -2,6 +2,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
+import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
+
+import { getFirestore } from "firebase/firestore";
+
 import { User } from './user';
 
 const httpOptions = {
