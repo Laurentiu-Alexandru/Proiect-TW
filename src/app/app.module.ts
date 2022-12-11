@@ -10,9 +10,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { MainComponent } from './main/main.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 import { AuthentificationService } from '../app/auth/auth.service';
 import { DatabaseService } from '../app/database-service/database.service';
+import { StartPageComponent } from './start-page/start-page.component';
+import { RestauranteComponent } from './restaurante/restaurante.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { DatabaseService } from '../app/database-service/database.service';
     AppComponent,
     LoginComponent,
     SignupComponent,
-    MainComponent
+    MainComponent,
+    StartPageComponent,
+    RestauranteComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,7 @@ import { DatabaseService } from '../app/database-service/database.service';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [AuthentificationService,DatabaseService],
+  providers: [AuthentificationService, DatabaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

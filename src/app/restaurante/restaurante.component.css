@@ -1,0 +1,95 @@
+.col-title {
+    width: 100%;
+    height: 50px;
+    background-color: #143d59;
+    border-bottom: 1px rgb(255, 255, 255) solid;
+  }
+  
+  body {
+    background-color: #f4b41a;
+    margin: 0;
+    padding: 0;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    width: 100%;
+    border: 0;
+    height: 600px;
+}
+
+
+  .page-container {
+    display:  flex;
+    justify-content: center;
+    align-items:  center;
+    flex-wrap:  wrap;
+  }
+
+button[data-uid="filtre"] {
+    height: 40px;
+    float: left;
+}
+.title {
+  color:  #f4b41a;
+  font-size: 40px;
+  margin-left: 50px;
+  line-height: 50px;
+  font-family: sans-serif;
+  font-style: courier;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+
+
+.dropdown-check-list {
+    display: inline-block;
+  }
+  
+  .dropdown-check-list .anchor {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 50px 5px 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdown-check-list .anchor:after {
+    position: absolute;
+    content: "";
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    padding: 5px;
+    right: 10px;
+    top: 20%;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  
+  .dropdown-check-list .anchor:active:after {
+    right: 8px;
+    top: 21%;
+  }
+  
+  .dropdown-check-list ul.items {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
+  .dropdown-check-list ul.items li {
+    list-style: none;
+  }
+  
+  .dropdown-check-list.visible .anchor {
+    color: #0094ff;
+  }
+  
+  .dropdown-check-list.visible .items {
+    display: block;
+  }

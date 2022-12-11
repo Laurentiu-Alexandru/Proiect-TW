@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { AuthentificationService } from '../auth.service';
 import { DatabaseService } from '../../database-service/database.service';
@@ -54,6 +54,7 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private router: Router,
+    private route: ActivatedRoute,
     private auth: AuthentificationService,
     private json: DatabaseService
   ) {}
@@ -92,5 +93,9 @@ export class LoginComponent implements OnInit {
         username_input!.classList.add('is-invalid');
       }
     }
+  }
+
+  onLogin(){
+    this.router.navigate(['../','startPage'], {relativeTo: this.route});
   }
 }
