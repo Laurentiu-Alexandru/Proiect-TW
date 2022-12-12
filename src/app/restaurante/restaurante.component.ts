@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./restaurante.component.css']
 })
 export class RestauranteComponent {
-  onChangeMonth(Nume: String){}
+
 }
