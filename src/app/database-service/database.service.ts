@@ -8,6 +8,7 @@ import { getDatabase } from 'firebase/database';
 import { getFirestore } from 'firebase/firestore';
 
 import { User } from './user';
+import { Restaurant } from './restaurant';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -30,6 +31,7 @@ export class DatabaseService {
 
 
     apiUrl_users = 'http://localhost:5000/users';
+    apiUrl_restaurants = 'http://localhost:5000/restaurants';
 
   constructor(private http: HttpClient) {}
 
@@ -40,5 +42,14 @@ export class DatabaseService {
   getUser(User_Id: number): Observable<User> {
     const user_url = `${this.apiUrl_users}/${User_Id}`;
     return this.http.get<User>(user_url);
+  }
+
+  getRestaurants(): Observable<Restaurant[]> {
+    return this.http.get<Restaurant[]>(this.apiUrl_restaurants);
+  }
+
+  getURestaurant(Restaurant_Id: number): Observable<Restaurant> {
+    const apiUrl_restaurants = `${this.apiUrl_restaurants}/${Restaurant_Id}`;
+    return this.http.get<Restaurant>(apiUrl_restaurants);
   }
 }

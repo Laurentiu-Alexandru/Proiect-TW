@@ -82,7 +82,7 @@ export class LoginComponent implements OnInit {
 
         username_input!.classList.add('is-valid');
 
-        this.router.navigate(['main']);
+        this.router.navigate(['app']);
         console.log('Id: ' + this.auth.User_ID);
       }
       if (username != this.users[i].username) {
@@ -93,9 +93,5 @@ export class LoginComponent implements OnInit {
         username_input!.classList.add('is-invalid');
       }
     }
-  }
-
-  onLogin(){
-    this.router.navigate(['../','startPage'], {relativeTo: this.route});
   }
 }
