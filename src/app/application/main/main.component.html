@@ -12,21 +12,27 @@
 
         </div>
         <div class="row" style="width: 100%">
-            <div *ngFor=" let restaurant of restaurants">
-                <div class="col-boxes">
-
-                    <div *ngIf=" restaurant.type =='rezerva'">
-                        <h1 class="title-box">Cele mai bune restaurante! Rezervă acum!!</h1>
-                    </div>
-
+            <h1 class="title-box">Cele mai bune restaurante! Comandă acum!!</h1>
+            <div class="column" style="width: 100%">
+                <div *ngFor=" let restaurant of restaurants">
                     <div *ngIf=" restaurant.type =='comanda'">
-                        <h1 class="title-box">Cele mai bune restaurante! Rezervă acum!!</h1>
+                        <div class="box">
+                            <img src="{{restaurant.banner_img}}">
+                            <p class="nume-restaurant">{{restaurant.name}}</p>
+                            <p class="rating-restaurant">{{restaurant.rating}}</p>
+                        </div>
                     </div>
-
-                    <div class="box">
-                        <img src="{{restaurant.banner_img}}">
-                        <p class="nume-restaurant">{{restaurant.name}}</p>
-                        <p class="rating-restaurant">{{restaurant.rating}}</p>
+                </div>
+            </div>
+            <h1 class="title-box">Cele mai bune restaurante! Rezervă acum!!</h1>
+            <div class="column" style="width: 100%">
+                <div *ngFor=" let restaurant of restaurants">
+                    <div *ngIf=" restaurant.type =='rezerva'">
+                        <div class="box">
+                            <img src="{{restaurant.banner_img}}">
+                            <p class="nume-restaurant">{{restaurant.name}}</p>
+                            <p class="rating-restaurant">{{restaurant.rating}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
