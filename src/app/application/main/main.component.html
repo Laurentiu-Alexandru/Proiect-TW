@@ -17,9 +17,11 @@
                 <div *ngFor=" let restaurant of restaurants">
                     <div *ngIf=" restaurant.type =='comanda'">
                         <div class="box">
-                            <img src="{{restaurant.banner_img}}">
-                            <p class="nume-restaurant">{{restaurant.name}}</p>
-                            <p class="rating-restaurant">{{restaurant.rating}}</p>
+                            <button (click)="goToRestaurant(restaurant.name)" class="box-button">
+                                <img src="{{restaurant.banner_img}}" alt="buttonpng">
+                                <p class="nume-restaurant">{{restaurant.name}}</p>
+                                <p class="rating-restaurant">{{restaurant.rating}}</p>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -29,9 +31,11 @@
                 <div *ngFor=" let restaurant of restaurants">
                     <div *ngIf=" restaurant.type =='rezerva'">
                         <div class="box">
-                            <img src="{{restaurant.banner_img}}">
-                            <p class="nume-restaurant">{{restaurant.name}}</p>
-                            <p class="rating-restaurant">{{restaurant.rating}}</p>
+                            <button (click)="goToRestaurant(restaurant.name)" class="box-button">
+                                <img src="{{restaurant.banner_img}}" alt="buttonpng">
+                                <p class="nume-restaurant">{{restaurant.name}}</p>
+                                <p class="rating-restaurant">{{restaurant.rating}}</p>
+                            </button>
                         </div>
                     </div>
                 </div>

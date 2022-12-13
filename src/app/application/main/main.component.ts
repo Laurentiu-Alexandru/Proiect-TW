@@ -30,4 +30,8 @@ export class MainComponent {
     this.router.navigate(['../','restaurante'], {relativeTo: this.route});
   }
 
+  goToRestaurant(name: String) {
+    this.router.navigate(['../','restaurante', name], {relativeTo: this.route});
+ }
+
 }

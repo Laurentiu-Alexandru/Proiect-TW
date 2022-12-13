@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Restaurant } from '../../database-service/restaurant';
+import { DatabaseService } from '../../database-service/database.service';
 
 @Component({
   selector: 'app-restaurante',
@@ -6,5 +9,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./restaurante.component.css']
 })
 export class RestauranteComponent {
+
+  restaurants: Restaurant[] =  []
+
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private json: DatabaseService,
+
+  ) {}
+
+  ngOnInit(): void {
+    this.json.getRestaurants().subscribe((restaurants: Restaurant[])=>{
+      this.restaurants = restaurants;
+      console.log(restaurants)
+    })
+  }
+
+  goToRestaurant(name: String) {
+    this.router.navigate(['../','restaurante', name], {relativeTo: this.route});
+  }
 
 }

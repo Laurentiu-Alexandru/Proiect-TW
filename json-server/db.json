@@ -1,78 +1,94 @@
 {
-    "users": [{
-            "id": 1,
-            "username": "admin",
-            "email": "admin@admin.com",
-            "password": "admin"
-        },
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@admin.com",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "email": "user2@user.com",
+      "password": "pass"
+    },
+    {
+      "id": 3,
+      "username": "user2",
+      "email": "user2@user2.user2",
+      "password": "user2"
+    },
+    {
+      "id": 4,
+      "username": "da",
+      "email": "",
+      "password": "da"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Spartan",
+      "type": "comanda",
+      "rating": "5",
+      "location": "Str. Wololoo, nr.1",
+      "produse": [
         {
-            "id": 2,
-            "username": "user2",
-            "email": "user2@user.com",
-            "password": "pass"
-        },
-        {
-            "id": 3,
-            "username": "user2",
-            "email": "user2@user2.user2",
-            "password": "user2"
+          "id": 1,
+          "nume": "panamnt",
+          "ingrediente": "efectiv pamnat",
+          "pret": 1000
         }
-    ],
-    "restaurants": [{
-            "id": 1,
-            "name": "template1",
-            "type": "comanda",
-            "rating": "5",
-            "location": "Str. Wololoo, nr.1",
-            "produse": [{
-                "id": 1,
-                "nume": "panamnt",
-                "ingrediente": "efectiv pamnat",
-                "pret": 1000
-            }],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/tm-logo-spartan_6.png"
-        },
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/tm-logo-spartan_6.png"
+    },
+    {
+      "id": 2,
+      "name": "template2",
+      "type": "rezerva",
+      "rating": "5",
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
         {
-            "id": 2,
-            "name": "template2",
-            "type": "rezerva",
-            "rating": "5",
-            "location": "Str. Wololoo, nr.2",
-            "produse": [{
-                "id": 1,
-                "nume": "panamnt",
-                "ingrediente": "efectiv pamnat",
-                "pret": 1000
-            }],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/MicrosoftTeams-image_3_3.png"
-        },
-        {
-            "id": 3,
-            "name": "template3",
-            "type": "comanda",
-            "rating": "5",
-            "location": "Str. Wololoo, nr.2",
-            "produse": [{
-                "id": 1,
-                "nume": "panamnt",
-                "ingrediente": "efectiv pamnat",
-                "pret": 1000
-            }],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/MicrosoftTeams-image_3_3.png"
-        },
-        {
-            "id": 1,
-            "name": "template2",
-            "type": "rezerva",
-            "rating": "5",
-            "location": "Str. Wololoo, nr.2",
-            "produse": [{
-                "id": 1,
-                "nume": "panamnt",
-                "ingrediente": "efectiv pamnat",
-                "pret": 1000
-            }],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/MicrosoftTeams-image_3_3.png"
+          "id": 1,
+          "nume": "panamnt",
+          "ingrediente": "efectiv pamnat",
+          "pret": 1000
         }
-    ]
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/MicrosoftTeams-image_3_3.png"
+    },
+    {
+      "id": 3,
+      "name": "template3",
+      "type": "comanda",
+      "rating": "5",
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "panamnt",
+          "ingrediente": "efectiv pamnat",
+          "pret": 1000
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/MicrosoftTeams-image_3_3.png"
+    },
+    {
+      "id": 1,
+      "name": "template2",
+      "type": "rezerva",
+      "rating": "5",
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "panamnt",
+          "ingrediente": "efectiv pamnat",
+          "pret": 1000
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/MicrosoftTeams-image_3_3.png"
+    }
+  ]
 }

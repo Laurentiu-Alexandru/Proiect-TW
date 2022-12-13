@@ -17,6 +17,7 @@ import { RestauranteComponent } from './application/restaurante/restaurante.comp
 import { ApplicationComponent } from './application/application.component';
 import { HeaderComponent } from './application/header/header.component';
 import { FooterComponent } from './application/footer/footer.component';
+import { DetailsRestaurantComponent } from './application/details-restaurant/details-restaurant.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { FooterComponent } from './application/footer/footer.component';
     RestauranteComponent,
     ApplicationComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DetailsRestaurantComponent
   ],
   imports: [
     BrowserModule,
