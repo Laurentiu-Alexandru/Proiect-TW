@@ -9,7 +9,7 @@ import { DetailsRestaurantComponent } from "./application/details-restaurant/det
 const appRoutes: Routes = [{path: '', redirectTo: '/login', pathMatch: 'full'},
 {path: 'login', component: LoginComponent},
 {path: 'signup', component: SignupComponent},
-{path: 'app', component: ApplicationComponent},
+{path: 'rinder', component: ApplicationComponent},
 {path: 'restaurante', component: RestauranteComponent},
 {path: 'restaurante/:name', component: DetailsRestaurantComponent}];
 

@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #f4b41a;
     padding: 0;
 }
 
@@ -9,8 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 200px;
-    padding: 15px 15px 2500px;
+    padding-top: 180px;
+    padding-left: 50px;
     font-size: 30px;
 }
 
@@ -69,8 +70,8 @@ body {
 
 .box-restaurante {
     width: 460px;
-    background-image: url("../../../assets/images/restaurant.png");
     border-radius: 12px;
+    margin-top: -50px;
     margin-right: 5%;
     float: left;
     margin-bottom: 4%;
@@ -93,7 +94,6 @@ body {
     padding-top: 10px;
     padding-left: 15px;
 }
-
 
 .nume-restaurant {
     color: #f4b41a;

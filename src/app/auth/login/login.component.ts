@@ -82,7 +82,7 @@ export class LoginComponent implements OnInit {
 
         username_input!.classList.add('is-valid');
 
-        this.router.navigate(['app']);
+        this.router.navigate(['rinder']);
         console.log('Id: ' + this.auth.User_ID);
       }
       if (username != this.users[i].username) {

@@ -1,65 +1,62 @@
 <app-header></app-header>
+<div class="page-container" style="width: 100%">
 
-<body>
-    <div class="page-container" style="width: 100%">
-        
-        <div class="row">
-            <div class="column-ads" style="width: 25%;">
+    <div class="row">
+        <div class="column-ads" style="width: 25%;">
 
-            </div>
-            <div class="column-restaurants" style="width: 50%">
-                <ul>
-                    <div *ngFor=" let restaurant of restaurants">
-                            <ul><button class="restaurant-list-element" (click)="goToRestaurant(restaurant.name)">
+        </div>
+        <div class="column-restaurants" style="width: 50%">
+            <ul>
+                <div *ngFor=" let restaurant of restaurants">
+                    <ul><button class="restaurant-list-element" (click)="goToRestaurant(restaurant.name)">
                                 <p class="part">{{restaurant.name}}</p>
                             </button></ul>
-                    </div>                 
+                </div>
+            </ul>
+        </div>
+        <div class="column-filters" style="width: 25%">
+            <form>
+                <p>Alege-ți filtrele:</p>
+                <ul>
+                    <li><input type="checkbox" name="filtre" id="Fastfood" value="Fastfood">
+                        <label for="">Fastfood</label>
+                    </li>
+                    <li><input type="checkbox" name="filtre" id="Salate" value="Salate">
+                        <label for="Salate">Salate</label>
+                    </li>
+                    <li><input type="checkbox" name="filtre" id="Peste" value="Peste">
+                        <label for="Peste">Pește</label>
+                    </li>
+                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
+                        <label for="Pizza">Pizza</label>
+                    </li>
+                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
+                        <label for="Pizza">Sushi</label>
+                    </li>
+                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
+                        <label for="Pizza">Shaorma</label>
+                    </li>
+                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
+                        <label for="Pizza">Ciorbe/Supe</label>
+                    </li>
+                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
+                        <label for="Pizza">Vegan</label>
+                    </li>
+                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
+                        <label for="Pizza">Cafea</label>
+                    </li>
+                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
+                        <label for="Pizza">Noodoodles</label>
+                    </li>
+                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
+                        <label for="Pizza">Grătar</label>
+                    </li>
                 </ul>
-            </div>
-            <div class="column-filters" style="width: 25%">
-                <form>
-                    <p>Alege-ți filtrele:</p>
-                    <ul class="filter-list">
-                        <ul><input type="checkbox" name="filtre" id="Fastfood" value="Fastfood">
-                            <label for="">Fastfood</label>
-                        </ul>
-                        <ul><input type="checkbox" name="filtre" id="Salate" value="Salate">
-                            <label for="Salate">Salate</label>
-                        </ul>
-                        <ul><input type="checkbox" name="filtre" id="Peste" value="Peste">
-                            <label for="Peste">Pește</label>
-                        </ul>
-                        <ul><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                            <label for="Pizza">Pizza</label>
-                        </ul>
-                        <ul><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                            <label for="Pizza">Sushi</label>
-                        </ul>
-                        <ul><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                            <label for="Pizza">Shaorma</label>
-                        </ul>
-                        <ul><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                            <label for="Pizza">Ciorbe/Supe</label>
-                        </ul>
-                        <ul><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                            <label for="Pizza">Vegan</label>
-                        </ul>
-                        <ul><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                            <label for="Pizza">Cafea</label>
-                        </ul>
-                        <ul><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                            <label for="Pizza">Noodoodles</label>
-                        </ul>
-                        <ul><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                            <label for="Pizza">Grătar</label>
-                        </ul>
-                    </ul>
-                </form>
-                <p><button type="button" class="btn btn-secondary" style="background-color:#143d59 ;">Caută</button>
-                </p>
+            </form>
+            <p><button type="button" class="btn btn-secondary" style="background-color:#143d59 ;">Caută</button>
+            </p>
 
-            </div>
         </div>
     </div>
-</body>
+</div>
 <app-footer></app-footer>
