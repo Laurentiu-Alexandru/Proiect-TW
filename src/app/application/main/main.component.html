@@ -14,13 +14,13 @@
         <div class="row" style="width: 100%">
             <h1 class="title-box">Cele mai bune restaurante! Comandă acum!!</h1>
             <div class="column" style="width: 100%">
-                <div *ngFor=" let restaurant of restaurants">
-                    <div *ngIf=" restaurant.type =='comanda'">
+                <div *ngFor=" let restaurant of restaurants; let i = index">
+                    <div *ngIf=" restaurant.type =='comanda' && i < 4">
                         <div class="box">
                             <button (click)="goToRestaurant(restaurant.name)" class="box-button">
                                 <img src="{{restaurant.banner_img}}" alt="buttonpng">
                                 <p class="nume-restaurant">{{restaurant.name}}</p>
-                                <p class="rating-restaurant">{{restaurant.rating}}</p>
+                                <p class="rating-restaurant">{{restaurant.rating}}★</p>
                             </button>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                             <button (click)="goToRestaurant(restaurant.name)" class="box-button">
                                 <img src="{{restaurant.banner_img}}" alt="buttonpng">
                                 <p class="nume-restaurant">{{restaurant.name}}</p>
-                                <p class="rating-restaurant">{{restaurant.rating}}</p>
+                                <p class="rating-restaurant">{{restaurant.rating}}★</p>
                             </button>
                         </div>
                     </div>

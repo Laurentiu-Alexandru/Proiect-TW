@@ -10,7 +10,7 @@ import { Restaurant } from '../../database-service/restaurant';
 })
 export class MainComponent {
 
-  restaurants: Restaurant[] =  []
+  restaurants: Restaurant[] =  [];
 
   constructor(
     private router: Router,
@@ -31,7 +31,7 @@ export class MainComponent {
   }
 
   goToRestaurant(name: String) {
-    this.router.navigate(['../','restaurante', name], {relativeTo: this.route});
+    this.router.navigate(['../','restaurante', 'service'], { queryParams: { restaurant: name}, relativeTo: this.route});
  }
 
 }

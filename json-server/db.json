@@ -30,6 +30,7 @@
       "id": 1,
       "name": "Spartan",
       "type": "comanda",
+      "specialitate": "Mâncare grecească",
       "rating": "5",
       "location": "Str. Wololoo, nr.1",
       "produse": [
@@ -44,23 +45,8 @@
     },
     {
       "id": 2,
-      "name": "template2",
-      "type": "rezerva",
-      "rating": "5",
-      "location": "Str. Wololoo, nr.2",
-      "produse": [
-        {
-          "id": 1,
-          "nume": "panamnt",
-          "ingrediente": "efectiv pamnat",
-          "pret": 1000
-        }
-      ],
-      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/MicrosoftTeams-image_3_3.png"
-    },
-    {
-      "id": 3,
-      "name": "template3",
+      "name": "Antalya",
+      "specialitate": "Shaorma",
       "type": "comanda",
       "rating": "5",
       "location": "Str. Wololoo, nr.2",
@@ -72,11 +58,69 @@
           "pret": 1000
         }
       ],
-      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/MicrosoftTeams-image_3_3.png"
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-antalia.png"
     },
     {
-      "id": 1,
-      "name": "template2",
+      "id": 3,
+      "name": "Mediteraneo",
+      "specialitate": "Pizza",
+      "type": "comanda",
+      "rating": "5",
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "panamnt",
+          "ingrediente": "efectiv pamnat",
+          "pret": 1000
+        },
+        {
+          "id": 2,
+         "nume": "Nisip",
+          "ingrediente": "efectiv pamnat",
+          "pret": 1000
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/mediteraneo.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Hrana Pământului",
+      "specialitate": "Mâncare vegană",
+      "type": "comanda",
+      "rating": "5",
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "panamnt",
+          "ingrediente": "efectiv pamnat",
+          "pret": 1000
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-hrana-reloaded-2-.png"
+    },
+    {
+      "id": 5,
+      "name": "Pulcinella",
+      "specialitate": "Pizza ca în Italia",
+      "type": "comanda",
+      "rating": "5",
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "panamnt",
+          "ingrediente": "efectiv pamnat",
+          "pret": 1000
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-pulcinella.png"
+    },
+    {
+      "id": 6,
+      "name": "Urban King",
+      "specialitate": "Fastfood",
       "type": "rezerva",
       "rating": "5",
       "location": "Str. Wololoo, nr.2",
@@ -88,7 +132,75 @@
           "pret": 1000
         }
       ],
-      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/MicrosoftTeams-image_3_3.png"
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/image0.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "The Empanadas Factory",
+      "specialitate": "Patiserie Latino-Americană",
+      "type": "comanda",
+      "rating": "5",
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "panamnt",
+          "ingrediente": "efectiv pamnat",
+          "pret": 1000
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/Empanada_logo_7.jpg"
+    },    
+    {
+      "id": 8,
+      "name": "Cofetaria Naomi",
+      "specialitate": "Specialiști în deserturi",
+      "type": "rezerva",
+      "rating": "5",
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "panamnt",
+          "ingrediente": "efectiv pamnat",
+          "pret": 1000
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/rsz_logo_1_1_1.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Ciolanarie",
+      "specialitate": "Mâncare de porc tradițională",
+      "type": "rezerva",
+      "rating": "5",
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "panamnt",
+          "ingrediente": "efectiv pamnat",
+          "pret": 1000
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-ciolanarie-cmyk-01.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Tinecz",
+      "type": "rezerva",
+      "specialitate": "Restaurant",
+      "rating": "5",
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "panamnt",
+          "ingrediente": "efectiv pamnat",
+          "pret": 1000
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/f1ba253c-cd44-46b9-9b04-76a80a5128d9.png"
     }
   ]
 }

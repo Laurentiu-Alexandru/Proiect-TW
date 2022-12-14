@@ -29,6 +29,9 @@
         margin-top: 10px;
         background-color: #f4b41a;
         border: #143d59 solid 2px;
+        padding-bottom: 50px;
+        padding-top: 5px;
+        padding-left: 15px;
     }
 
     .part {

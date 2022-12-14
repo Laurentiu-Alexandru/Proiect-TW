@@ -5,17 +5,26 @@
 
         </div>
         <div class="column-meniu" style="width: 50%">
-            <div class="row" class="box-logo">
-                <img src="https://tazzcdn.akamaized.net/uploads/logo/tm-logo-spartan_6.png" class="restaurant-logo">
-                <p class="linie"></p>
-            </div>
-            <div class="row" class="meniu">
-
+            <div *ngFor=" let restaurant of restaurants">
+                <div *ngIf=" restaurant.name == restaurantName.toString() ">
+                    <div class="row" class="box-logo">
+                        <img src="{{restaurant.banner_img}}" class="restaurant-logo">
+                        <p class="linie"></p>
+                    </div>
+                    <div class="row" class="meniu">
+                        <div *ngFor=" let produs of produse">
+                            <ul><button class="restaurant-list-element">
+                                    <p class="part">{{produs.nume}} -- {{produs.pret}}lei</p>
+                                </button></ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="column-ads" style="width: 25%">
 
         </div>
+
     </div>
 </div>
 <app-footer></app-footer>

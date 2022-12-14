@@ -2,6 +2,7 @@ export interface Restaurant {
   id: number;
   name: string;
   type: string;
+  specialitate: string
   rating: number;
   location: string;
   produse: [

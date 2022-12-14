@@ -20,3 +20,24 @@
     border-top: 2px solid aliceblue;
     margin-top: 20px;
 }
+
+.restaurant-list-element {
+    width: 70%;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: #f4b41a;
+    border: #143d59 solid 2px;
+    padding-bottom: 50px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.part {
+    float: left;
+    margin-top: 10px;
+    font-size: large;
+    color: #143d59;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}

@@ -102,12 +102,15 @@ body {
     padding-bottom: 4px;
     margin-left: 0;
     width: 220px;
+    font-size: 20px;
 }
 
 .rating-restaurant {
     float: right;
-    margin-top: -36px;
+    margin-top: -76px;
     color: #f4b41a;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    text-shadow:0 0 13px  #000000;
 }
 
 .dashboard {

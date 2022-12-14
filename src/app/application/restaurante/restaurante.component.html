@@ -9,8 +9,8 @@
             <ul>
                 <div *ngFor=" let restaurant of restaurants">
                     <ul><button class="restaurant-list-element" (click)="goToRestaurant(restaurant.name)">
-                                <p class="part">{{restaurant.name}}</p>
-                            </button></ul>
+                            <p class="part">{{restaurant.name}} - {{restaurant.specialitate}}</p>
+                        </button></ul>
                 </div>
             </ul>
         </div>

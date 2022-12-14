@@ -27,7 +27,7 @@ export class RestauranteComponent {
   }
 
   goToRestaurant(name: String) {
-    this.router.navigate(['../','restaurante', name], {relativeTo: this.route});
+    this.router.navigate(['../','restaurante', 'service'], { queryParams: { restaurant: name}, relativeTo: this.route});
   }
 
 }
