@@ -1,27 +1,114 @@
+.bodi {
+    background-image: url("../../../assets/images/Background.png");
+    background-size: cover;
+}
+
 form {
     width: 600px;
-    margin: 25% auto 15% auto;
+    margin-top: 10%;
+    margin-left: 50%;
+    padding: 50px;
 }
 
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
+h1,
+h5,
+button,
+p {
+    font-family: 'Callie Chalk Font', sans-serif;
+    color: white;
 }
 
-@-webkit-keyframes animatezoom {
-    from {
-        -webkit-transform: scale(0)
+label,
+input {
+    font-family: 'Callie Chalk Font', sans-serif;
+    color: black;
+}
+
+.swing {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 40%;
+}
+
+.swing:hover {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    animation-name: swing;
+    animation-duration: 1s;
+}
+
+.swing:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #999;
+    top: -325px;
+    left: -17px;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+
+/* nail */
+
+.swing:before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -335px;
+    left: 0.8px;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+
+@-webkit-keyframes swing {
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
     }
     to {
-        -webkit-transform: scale(1)
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
     }
 }
 
-@keyframes animatezoom {
-    from {
-        transform: scale(0)
+@keyframes swing {
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
     }
     to {
-        transform: scale(1)
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
     }
 }

@@ -5,17 +5,17 @@
         <div class="column-ads" style="width: 25%;">
 
         </div>
-        <div class="column-restaurants" style="width: 50%">
-            <ul>
-                <div *ngFor=" let restaurant of restaurants">
-                    <ul><button class="restaurant-list-element" (click)="goToRestaurant(restaurant.name)">
-                            <p class="part">{{restaurant.name}} - {{restaurant.specialitate}}</p>
-                        </button></ul>
-                </div>
-            </ul>
-        </div>
+
         <div class="column-filters" style="width: 25%">
-            <form>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button><br>
+                <button class="btn" onclick="filterSelection('Fastfood')"> Fastfood</button><br>
+                <button class="btn" onclick="filterSelection('Salate')"> Salate</button><br>
+                <button class="btn" onclick="filterSelection('Peste')"> Peste</button><br>
+                <button class="btn" onclick="filterSelection('Pizza ca în Italia')"> Pizza</button><br>
+            </div>
+
+            <!-- <form>
                 <p>Alege-ți filtrele:</p>
                 <ul>
                     <li><input type="checkbox" name="filtre" id="Fastfood" value="Fastfood">
@@ -54,9 +54,19 @@
                 </ul>
             </form>
             <p><button type="button" class="btn btn-secondary" style="background-color:#143d59 ;">Caută</button>
-            </p>
+            </p>-->
 
+        </div>
+        <div class="container column-restaurants" style="width: 50%">
+            <ul>
+                <div *ngFor=" let restaurant of restaurants">
+                    <ul><button class=" restaurant-list-element" (click)="goToRestaurant(restaurant.name)">
+                            <p class="part  {{restaurant.specialitate}}">{{restaurant.name}} - {{restaurant.specialitate}}</p>
+                        </button></ul>
+                </div>
+            </ul>
         </div>
     </div>
 </div>
+
 <app-footer></app-footer>

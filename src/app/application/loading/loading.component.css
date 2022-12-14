@@ -1,0 +1,22 @@
+body {
+    overflow-y: hidden;
+}
+
+.page-container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-left: 550px;
+    padding-right: 550px;
+    padding-bottom: 220px;
+    font-size: 30px;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+h1 {
+    text-align: center;
+}

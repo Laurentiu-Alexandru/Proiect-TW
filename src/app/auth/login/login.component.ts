@@ -48,8 +48,8 @@ export class LoginComponent implements OnInit {
   newUser: User = {
     id: 0,
     username: '',
-    email: '',
-    password: '',
+    cos: [],
+    comenzi: []
   };
 
   constructor(
@@ -61,6 +61,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.json.getUsers().subscribe((user: User[]) => (this.users = user));
+    sessionStorage.clear();
   }
 
   authUser(form: NgForm) {
@@ -78,12 +79,18 @@ export class LoginComponent implements OnInit {
         username == this.users[i].username &&
         password == this.users[i].password
       ) {
-        this.auth.User_ID = this.users[i].id;
+
+        sessionStorage.setItem('user_id', ""+this.users[i].id);
+        sessionStorage.setItem('username',this.users[i].username);
+        this.auth.User.id = this.users[i].id;
+        this.auth.User.username=this.users[i].username;
+        this.auth.User.cos=this.users[i].cos;
+        this.auth.User.comenzi=this.users[i].comenzi;
 
         username_input!.classList.add('is-valid');
 
-        this.router.navigate(['rinder']);
-        console.log('Id: ' + this.auth.User_ID);
+        this.router.navigate(['main']);
+        console.log('Id: ' + this.auth.User.id);
       }
       if (username != this.users[i].username) {
         username_input!.classList.add('is-invalid');

@@ -13,7 +13,7 @@
                     </div>
                     <div class="row" class="meniu">
                         <div *ngFor=" let produs of produse">
-                            <ul><button class="restaurant-list-element">
+                            <ul><button class="restaurant-list-element" (click)="addProdusToCart(produs.nume)">
                                     <p class="part">{{produs.nume}} -- {{produs.pret}}lei</p>
                                 </button></ul>
                         </div>

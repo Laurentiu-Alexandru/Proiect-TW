@@ -48,7 +48,7 @@ export class DatabaseService {
     return this.http.get<Restaurant[]>(this.apiUrl_restaurants);
   }
 
-  getURestaurant(Restaurant_Id: number): Observable<Restaurant> {
+  getRestaurant(Restaurant_Id: number): Observable<Restaurant> {
     const apiUrl_restaurants = `${this.apiUrl_restaurants}/${Restaurant_Id}`;
     return this.http.get<Restaurant>(apiUrl_restaurants);
   }

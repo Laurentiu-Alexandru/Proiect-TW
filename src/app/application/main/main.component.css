@@ -1,11 +1,4 @@
-body {
-    margin: 0;
-    background-color: #f4b41a;
-    padding: 0;
-}
-
 .page-container {
-    background-color: #f4b41a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,12 +33,12 @@ body {
 .box {
     width: 220px;
     height: 230px;
-    background-color: #f4b41a;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     margin-right: 5%;
     float: left;
     margin-bottom: 4%;
+    display: inline;
 }
 
 .box img {
@@ -107,10 +100,10 @@ body {
 
 .rating-restaurant {
     float: right;
-    margin-top: -76px;
+    margin-top: -100px;
     color: #f4b41a;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
-    text-shadow:0 0 13px  #000000;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 13px #000000;
 }
 
 .dashboard {

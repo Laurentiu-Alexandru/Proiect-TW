@@ -1,14 +1,20 @@
 import { Injectable } from '@angular/core';
+import { User } from '../database-service/user';
 
 @Injectable()
 export class AuthentificationService {
 
-  User_ID: number = 0;
+  User: User  = {
+    id: 0,
+    username: "",
+    cos:[],
+    comenzi: []
+}
 
   constructor(){}
 
   ngOnInit(): void {
   }
 
-  
+
 }

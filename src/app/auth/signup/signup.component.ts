@@ -31,8 +31,8 @@ export class SignupComponent implements OnInit {
   newUser: User = {
     id: 0,
     username: "",
-    email: "",
-    password: "",
+    cos: [],
+    comenzi: []
   }
 
   onClickSignup_signup(form: NgForm){

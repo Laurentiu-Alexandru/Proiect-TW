@@ -18,6 +18,12 @@ import { ApplicationComponent } from './application/application.component';
 import { HeaderComponent } from './application/header/header.component';
 import { FooterComponent } from './application/footer/footer.component';
 import { DetailsRestaurantComponent } from './application/details-restaurant/details-restaurant.component';
+import { ProfileComponent } from './application/profile/profile.component';
+import { RinderComponent } from './application/rinder/rinder.component';
+import { CosComponent } from './application/cos/cos.component';
+import { PlatesteComponent } from './application/plateste/plateste.component';
+import { ComenziComponent } from './application/comenzi/comenzi.component';
+import { LoadingComponent } from './application/loading/loading.component';
 
 
 @NgModule({
@@ -30,7 +36,13 @@ import { DetailsRestaurantComponent } from './application/details-restaurant/det
     ApplicationComponent,
     HeaderComponent,
     FooterComponent,
-    DetailsRestaurantComponent
+    DetailsRestaurantComponent,
+    ProfileComponent,
+    RinderComponent,
+    CosComponent,
+    PlatesteComponent,
+    ComenziComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

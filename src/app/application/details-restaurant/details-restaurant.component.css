@@ -1,11 +1,10 @@
 .page-container {
-    background-color: #f4b41a;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 200px;
-    padding: 30px 15px 2500px;
+    padding: 30px 15px;
     font-size: 30px;
 }
 
