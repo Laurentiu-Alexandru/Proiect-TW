@@ -10,9 +10,11 @@ import { Produs } from 'src/app/database-service/produs';
 export class CosComponent {
 
 
-  constructor(    private auth: AuthentificationService){}
-  produse: Produs[] = this.auth.User.cos
+  constructor( private auth: AuthentificationService){}
+  produse: Produs[] = this.auth.User.cos;
+
   ngOnInit(): void {
+    console.log(this.produse);
   }
 
 }

@@ -14,11 +14,5 @@ export class PlatesteComponent {
 
   ) {}
 
-  ngOnInit(): void {
-    setTimeout(() => {
-      console.log('sleep');
-      this.router.navigate(['/main'], {relativeTo: this.route});
-      // And any other code that should run only after 5s
-    }, 1000);
-  }
+  ngOnInit(): void {}
 }
