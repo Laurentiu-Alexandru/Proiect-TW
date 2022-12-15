@@ -21,6 +21,10 @@ export class HeaderComponent {
   ) {}
 
   ngOnInit(): void {
+    if(sessionStorage.getItem('username')==null){
+      this.router.navigate(['../','login'], {relativeTo: this.route});
+    }
+
   }
 
   getUsername(){

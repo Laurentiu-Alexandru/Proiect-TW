@@ -4,24 +4,24 @@
         background-color: #143d59;
         border-bottom: 1px rgb(255, 255, 255) solid;
     }
-
+    
     ul li {
         list-style-type: none;
         padding-bottom: 10px;
     }
-
+    
     .page-container {
         background-color: #f4b41a;
         padding-top: 220px;
         padding-bottom: 500px;
         font-size: 25px;
     }
-
+    
     button[data-uid="filtre"] {
         height: 40px;
         float: left;
     }
-
+    
     .restaurant-list-element {
         width: 70%;
         height: 50px;
@@ -31,9 +31,9 @@
         border: #143d59 solid 2px;
         padding-bottom: 50px;
         padding-top: 5px;
-        padding-left: 15px;
+        padding-left: 20px;
     }
-
+    
     .part {
         float: left;
         margin-top: 10px;
@@ -42,19 +42,19 @@
         font-weight: 600;
         letter-spacing: 0.8px;
     }
-
+    
     .column-filters {
         float: left;
     }
-
+    
     .column-filters {
         border-left: 2px solid #143d59;
     }
-
+    
     .column-ads {
         border-right: 2px solid #143d59;
     }
-
+    
     .show {
         display: block;
     }

@@ -9,14 +9,14 @@
                     "restaurant": "Spartan",
                     "nume": "Gyros pui",
                     "ingrediente": "pui",
-                    "pret": 26.50
+                    "pret": 26.5
                 },
                 {
                     "id": 2,
                     "restaurant": "Spartan",
                     "nume": "Burger Apollo pui + cartofi",
                     "ingrediente": "pui",
-                    "pret": 9.90
+                    "pret": 9.9
                 }
             ],
             "comenzi": [{
@@ -24,24 +24,22 @@
                     "restaurant": "Antalya",
                     "nume": "Shaorma de vita mica",
                     "ingrediente": "pui",
-                    "pret": 20.00
+                    "pret": 20
                 },
                 {
                     "id": 2,
                     "restaurant": "Antalya",
                     "nume": "Shaorma XXL de pui",
                     "ingrediente": "pui",
-                    "pret": 32.50
+                    "pret": 32.5
                 },
                 {
                     "id": 3,
                     "restaurant": "Antalya",
                     "nume": "Shaorma de vita,cucan Mare",
                     "ingrediente": "pui",
-                    "pret": 29.00
+                    "pret": 29
                 }
-
-
             ]
         },
         {
@@ -74,31 +72,31 @@
                     "id": 1,
                     "nume": "Gyros pui",
                     "ingrediente": "pui",
-                    "pret": 26.50
+                    "pret": 26.5
                 },
                 {
                     "id": 2,
                     "nume": "Burger Apollo pui + cartofi",
                     "ingrediente": "pui",
-                    "pret": 9.90
+                    "pret": 9.9
                 },
                 {
                     "id": 3,
                     "nume": "Pita snitel",
                     "ingrediente": "pui",
-                    "pret": 16.50
+                    "pret": 16.5
                 },
                 {
                     "id": 4,
                     "nume": "Crispy mediu",
                     "ingrediente": "pui",
-                    "pret": 26.50
+                    "pret": 26.5
                 },
                 {
                     "id": 5,
                     "nume": "Meniu mediu crispy + racoritoare",
                     "ingrediente": "pui",
-                    "pret": 26.50
+                    "pret": 26.5
                 }
             ],
             "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/tm-logo-spartan_6.png"
@@ -114,31 +112,31 @@
                     "id": 1,
                     "nume": "Shaorma de vita mica",
                     "ingrediente": "pui",
-                    "pret": 20.00
+                    "pret": 20
                 },
                 {
                     "id": 2,
                     "nume": "Shaorma XXL de pui",
                     "ingrediente": "pui",
-                    "pret": 32.50
+                    "pret": 32.5
                 },
                 {
                     "id": 3,
                     "nume": "Shaorma de vita,cucan Mare",
                     "ingrediente": "pui",
-                    "pret": 29.00
+                    "pret": 29
                 },
                 {
                     "id": 4,
                     "nume": "Kebap mic de pui",
                     "ingrediente": "pui",
-                    "pret": 22.50
+                    "pret": 22.5
                 },
                 {
                     "id": 5,
                     "nume": "Cartofi prajiti",
                     "ingrediente": "pui",
-                    "pret": 12.50
+                    "pret": 12.5
                 }
             ],
             "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-antalia.png"
@@ -154,31 +152,31 @@
                     "id": 1,
                     "nume": "Pizza Prosciutto",
                     "ingrediente": "pui",
-                    "pret": 29.50
+                    "pret": 29.5
                 },
                 {
                     "id": 2,
                     "nume": "Pizza Salami",
                     "ingrediente": "pui",
-                    "pret": 28.00
+                    "pret": 28
                 },
                 {
                     "id": 3,
                     "nume": "Pizza Buffalla",
                     "ingrediente": "pui",
-                    "pret": 31.50
+                    "pret": 31.5
                 },
                 {
                     "id": 4,
                     "nume": "Kebab Mixt",
                     "ingrediente": "pui",
-                    "pret": 26.50
+                    "pret": 26.5
                 },
                 {
                     "id": 5,
                     "nume": "Pizza Calzone",
                     "ingrediente": "pui",
-                    "pret": 39.90
+                    "pret": 39.9
                 }
             ],
             "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/mediteraneo.jpg"
@@ -194,31 +192,31 @@
                     "id": 1,
                     "nume": "Bol tibetan",
                     "ingrediente": "pui",
-                    "pret": 28.50
+                    "pret": 28.5
                 },
                 {
                     "id": 2,
                     "nume": "Nuggets din conopida",
                     "ingrediente": "pui",
-                    "pret": 16.90
+                    "pret": 16.9
                 },
                 {
                     "id": 3,
                     "nume": "Supa crema de linte rosie",
                     "ingrediente": "pui",
-                    "pret": 11.20
+                    "pret": 11.2
                 },
                 {
                     "id": 4,
                     "nume": "Falafel meniu",
                     "ingrediente": "pui",
-                    "pret": 36.50
+                    "pret": 36.5
                 },
                 {
                     "id": 5,
                     "nume": "Falafel pita",
                     "ingrediente": "pui",
-                    "pret": 34.40
+                    "pret": 34.4
                 }
             ],
             "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-hrana-reloaded-2-.png"
@@ -234,31 +232,31 @@
                     "id": 1,
                     "nume": "Calzone Fresco",
                     "ingrediente": "pui",
-                    "pret": 46.50
+                    "pret": 46.5
                 },
                 {
                     "id": 2,
                     "nume": "Calzone Ragu Bolognese",
                     "ingrediente": "pui",
-                    "pret": 43.00
+                    "pret": 43
                 },
                 {
                     "id": 3,
                     "nume": "Pizza Diavola",
                     "ingrediente": "pui",
-                    "pret": 40.00
+                    "pret": 40
                 },
                 {
                     "id": 4,
                     "nume": "Pizza e Rucola",
                     "ingrediente": "pui",
-                    "pret": 43.00
+                    "pret": 43
                 },
                 {
                     "id": 5,
                     "nume": "Pizza Buffalla",
                     "ingrediente": "pui",
-                    "pret": 44.50
+                    "pret": 44.5
                 }
             ],
             "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-pulcinella.png"
@@ -274,31 +272,31 @@
                     "id": 1,
                     "nume": "Big Boss",
                     "ingrediente": "pui",
-                    "pret": 41.00
+                    "pret": 41
                 },
                 {
                     "id": 2,
                     "nume": "Le Burger",
                     "ingrediente": "pui",
-                    "pret": 44.90
+                    "pret": 44.9
                 },
                 {
                     "id": 3,
                     "nume": "Royal Burger",
                     "ingrediente": "pui",
-                    "pret": 44.50
+                    "pret": 44.5
                 },
                 {
                     "id": 4,
                     "nume": "Serbian Burger",
                     "ingrediente": "pui",
-                    "pret": 41.00
+                    "pret": 41
                 },
                 {
                     "id": 5,
                     "nume": "Summer Burger",
                     "ingrediente": "pui",
-                    "pret": 41.00
+                    "pret": 41
                 }
             ],
             "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/image0.jpeg"
@@ -320,25 +318,25 @@
                     "id": 2,
                     "nume": "Chicken Beginner Combo",
                     "ingrediente": "pui",
-                    "pret": 32.00
+                    "pret": 32
                 },
                 {
                     "id": 3,
                     "nume": "Spicy Combo",
                     "ingrediente": "pui",
-                    "pret": 36.50
+                    "pret": 36.5
                 },
                 {
                     "id": 4,
                     "nume": "Single Meat Lover",
                     "ingrediente": "pui",
-                    "pret": 28.00
+                    "pret": 28
                 },
                 {
                     "id": 5,
                     "nume": "Bloody Hot Combo",
                     "ingrediente": "pui",
-                    "pret": 33.50
+                    "pret": 33.5
                 }
             ],
             "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/Empanada_logo_7.jpg"
@@ -354,37 +352,37 @@
                     "id": 1,
                     "nume": "Tort Fructe",
                     "ingrediente": "pui",
-                    "pret": 11.00
+                    "pret": 11
                 },
                 {
                     "id": 2,
                     "nume": "Tort Choco Nuts",
                     "ingrediente": "pui",
-                    "pret": 13.90
+                    "pret": 13.9
                 },
                 {
                     "id": 3,
                     "nume": "Tort Nuca",
                     "ingrediente": "pui",
-                    "pret": 13.80
+                    "pret": 13.8
                 },
                 {
                     "id": 4,
                     "nume": "Ecler ciocolata",
                     "ingrediente": "pui",
-                    "pret": 9.50
+                    "pret": 9.5
                 },
                 {
                     "id": 5,
                     "nume": "Amandina",
                     "ingrediente": "pui",
-                    "pret": 8.50
+                    "pret": 8.5
                 },
                 {
                     "id": 6,
                     "nume": "Platou premium",
                     "ingrediente": "pui",
-                    "pret": 98.00
+                    "pret": 98
                 }
             ],
             "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/rsz_logo_1_1_1.jpg"
@@ -400,31 +398,31 @@
                     "id": 1,
                     "nume": "Supa crema de ciuperci",
                     "ingrediente": "pui",
-                    "pret": 14.00
+                    "pret": 14
                 },
                 {
                     "id": 2,
                     "nume": "Ciolan Bavarez cu Varza Rosie",
                     "ingrediente": "pui",
-                    "pret": 59.90
+                    "pret": 59.9
                 },
                 {
                     "id": 3,
                     "nume": "Ciolan si piure de cartofi cu tartufo",
                     "ingrediente": "pui",
-                    "pret": 65.50
+                    "pret": 65.5
                 },
                 {
                     "id": 4,
                     "nume": "Ciolan si cartofi cu usturoi la cuptor",
                     "ingrediente": "pui",
-                    "pret": 60.00
+                    "pret": 60
                 },
                 {
                     "id": 5,
                     "nume": "Varza calita cu mar si vin rosu",
                     "ingrediente": "pui",
-                    "pret": 17.50
+                    "pret": 17.5
                 }
             ],
             "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-ciolanarie-cmyk-01.jpeg"
@@ -440,31 +438,31 @@
                     "id": 1,
                     "nume": "Sarmale banatene cu mamaliga, bacon si ardei",
                     "ingrediente": "pui",
-                    "pret": 29.90
+                    "pret": 29.9
                 },
                 {
                     "id": 2,
                     "nume": "Paste carbonara + doza",
                     "ingrediente": "pui",
-                    "pret": 29.90
+                    "pret": 29.9
                 },
                 {
                     "id": 3,
                     "nume": "Bulz banatean + doza",
                     "ingrediente": "pui",
-                    "pret": 29.90
+                    "pret": 29.9
                 },
                 {
                     "id": 4,
                     "nume": "Ciorba de legume",
                     "ingrediente": "pui",
-                    "pret": 17.90
+                    "pret": 17.9
                 },
                 {
                     "id": 5,
                     "nume": "Paste Aglio Oglio (de post)",
                     "ingrediente": "pui",
-                    "pret": 31.90
+                    "pret": 31.9
                 }
             ],
             "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/f1ba253c-cd44-46b9-9b04-76a80a5128d9.png"

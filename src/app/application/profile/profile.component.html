@@ -1,7 +1,21 @@
 <app-header></app-header>
 
-<div class="container">
+<h2 style="text-align:center">User Profile Card</h2>
+
+<div class="card">
+    <img src="../../../assets/images/img_avatar.png" alt="John" style="width:100%">
     <h1>{{User.username}}</h1>
-    <h1>{{User.email}}</h1>
+    <p class="title">{{User.username}} User</p>
+    <p>UVT BEST</p>
+    <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+    <p><button>Edit</button></p>
+    <p><button>Delete</button></p>
 </div>
+
+
 <app-footer></app-footer>
