@@ -1,7 +1,7 @@
 export interface Produs{
-    id: number;
-    nume: string;
-    ingrediente: string;
-    produs_img: string;
-    pret: number;
+  id: number;
+  nume: string;
+  produs_img: string;
+  ingrediente: string;
+  pret: number;
   }

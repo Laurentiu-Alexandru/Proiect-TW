@@ -40,3 +40,36 @@
     font-weight: 600;
     letter-spacing: 0.8px;
 }
+
+.meniu {
+    margin-left: 15%;
+}
+
+.produs-layout {
+    margin-top: 5%;
+    border: #143d59 5px solid;
+    border-radius: 30px;
+    background-color: rgba(244, 180, 26, .7);
+    height: 300px;
+}
+
+.col-descriere {
+    font-size: 21px;
+    text-align: left;
+}
+
+.titlu {
+
+}
+
+.descriere {
+
+}
+
+.pret {
+
+}
+
+.col-image{
+align-self: center;
+}

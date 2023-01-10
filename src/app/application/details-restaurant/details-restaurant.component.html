@@ -11,11 +11,26 @@
                         <img src="{{restaurant.banner_img}}" class="restaurant-logo">
                         <p class="linie"></p>
                     </div>
-                    <div class="row" class="meniu">
+                    <div class="meniu" style="width: 50%">
                         <div *ngFor=" let produs of produse">
-                            <ul><button class="restaurant-list-element" (click)="addProdusToCart(produs.nume)">
-                                    <p class="part">{{produs.nume}} -- {{produs.pret}}lei</p>
-                                </button></ul>
+                            <button class="produs-layout" style="width: 100% ">
+                                <div class="row">
+                                <div class="col-descriere" style="width: 50%">
+                                    <div class="titlu">
+                                        <p>{{ produs.nume }}</p>
+                                    </div>
+                                    <div class="descriere">
+                                        <p>{{ produs.ingrediente }}</p>
+                                    </div>
+                                    <div class="pret">
+                                        <p>{{ produs.pret }}lei</p>
+                                    </div>
+                                </div>
+                                <div class="col-image" style="width: 50%">
+                                    <img src="{{produs.produs_img}}">
+                                </div>
+                                </div>
+                            </button>
                         </div>
                     </div>
                 </div>
