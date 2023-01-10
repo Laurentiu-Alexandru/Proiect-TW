@@ -5,8 +5,8 @@
                 <div class="col-dashboard">
                     <h1 class="title-box">Restaurante:</h1>
                     <button class="button-cumparaturi" (click)="onRezerva()">
-                    <img class="box-restaurante" src="../../../assets/images/restaurant.png">
-                  </button>
+                        <img class="box-restaurante" src="../../../assets/images/restaurant.png">
+                    </button>
                 </div>
             </div>
 
@@ -15,12 +15,12 @@
             <h1 class="title-box">Cele mai bune restaurante! Comandă acum!!</h1>
             <div class="column" style="width: 100%">
                 <div *ngFor=" let restaurant of restaurants; let i = index">
-                    <div *ngIf=" restaurant.type =='comanda' && i < 4">
+                    <div *ngIf="i < 4">
                         <div class="box">
-                            <button (click)="goToRestaurant(restaurant.name)" class="box-button">
-                                <img src="{{restaurant.banner_img}}" alt="buttonpng">
-                                <p class="nume-restaurant">{{restaurant.name}}</p>
-                                <p class="rating-restaurant">{{restaurant.rating}}★</p>
+                            <button (click)="goToRestaurant(restaurants_comanda[i].name)" class="box-button">
+                                <img src="{{restaurants_comanda[i].banner_img}}" alt="buttonpng">
+                                <p class="nume-restaurant">{{restaurants_comanda[i].name}}</p>
+                                <p class="rating-restaurant">{{restaurants_comanda[i].rating}}★</p>
                             </button>
                         </div>
                     </div>
@@ -28,13 +28,13 @@
             </div>
             <h1 class="title-box">Cele mai bune restaurante! Rezervă acum!!</h1>
             <div class="column" style="width: 100%">
-                <div *ngFor=" let restaurant of restaurants">
-                    <div *ngIf=" restaurant.type =='rezerva'">
+                <div *ngFor=" let restaurant of restaurants; let j = index">
+                    <div *ngIf="j < 4">
                         <div class="box">
-                            <button (click)="goToRestaurant(restaurant.name)" class="box-button">
-                                <img src="{{restaurant.banner_img}}" alt="buttonpng">
-                                <p class="nume-restaurant">{{restaurant.name}}</p>
-                                <p class="rating-restaurant">{{restaurant.rating}}★</p>
+                            <button (click)="goToRestaurant(restaurants_rezervare[j].name)" class="box-button">
+                                <img src="{{restaurants_rezervare[j].banner_img}}" alt="buttonpng">
+                                <p class="nume-restaurant">{{restaurants_rezervare[j].name}}</p>
+                                <p class="rating-restaurant">{{restaurants_rezervare[j].rating}}★</p>
                             </button>
                         </div>
                     </div>

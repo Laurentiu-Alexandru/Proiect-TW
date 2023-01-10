@@ -1,5 +1,6 @@
 {
-    "users": [{
+    "users": [
+        {
             "id": 1,
             "username": "admin",
             "email": "admin@admin.com",
@@ -66,7 +67,7 @@
             "name": "Spartan",
             "type": "comanda",
             "specialitate": "Mâncare grecească",
-            "rating": "5",
+            "rating": 5,
             "location": "Str. Wololoo, nr.1",
             "produse": [{
                     "id": 1,
@@ -106,7 +107,7 @@
             "name": "Antalya",
             "specialitate": "Shaorma",
             "type": "comanda",
-            "rating": "5",
+            "rating": 5,
             "location": "Str. Wololoo, nr.2",
             "produse": [{
                     "id": 1,
@@ -146,7 +147,7 @@
             "name": "Mediteraneo",
             "specialitate": "Pizza",
             "type": "comanda",
-            "rating": "5",
+            "rating": 4,
             "location": "Str. Wololoo, nr.2",
             "produse": [{
                     "id": 1,
@@ -186,7 +187,7 @@
             "name": "Hrana Pământului",
             "specialitate": "Mâncare vegană",
             "type": "comanda",
-            "rating": "5",
+            "rating": 3.5,
             "location": "Str. Wololoo, nr.2",
             "produse": [{
                     "id": 1,
@@ -226,7 +227,7 @@
             "name": "Pulcinella",
             "specialitate": "Pizza ca în Italia",
             "type": "comanda",
-            "rating": "5",
+            "rating": 4.5,
             "location": "Str. Wololoo, nr.2",
             "produse": [{
                     "id": 1,
@@ -265,8 +266,8 @@
             "id": 6,
             "name": "Urban King",
             "specialitate": "Fastfood",
-            "type": "rezerva",
-            "rating": "5",
+            "type": "rezervare",
+            "rating": 4.7,
             "location": "Str. Wololoo, nr.2",
             "produse": [{
                     "id": 1,
@@ -306,7 +307,7 @@
             "name": "The Empanadas Factory",
             "specialitate": "Patiserie Latino-Americană",
             "type": "comanda",
-            "rating": "5",
+            "rating": 3,
             "location": "Str. Wololoo, nr.2",
             "produse": [{
                     "id": 1,
@@ -345,8 +346,8 @@
             "id": 8,
             "name": "Cofetaria Naomi",
             "specialitate": "Specialiști în deserturi",
-            "type": "rezerva",
-            "rating": "5",
+            "type": "rezervare",
+            "rating": 3.9,
             "location": "Str. Wololoo, nr.2",
             "produse": [{
                     "id": 1,
@@ -391,8 +392,8 @@
             "id": 9,
             "name": "Ciolanarie",
             "specialitate": "Mâncare de porc tradițională",
-            "type": "rezerva",
-            "rating": "5",
+            "type": "rezervare",
+            "rating": 5,
             "location": "Str. Wololoo, nr.2",
             "produse": [{
                     "id": 1,
@@ -430,9 +431,9 @@
         {
             "id": 10,
             "name": "Tinecz",
-            "type": "rezerva",
+            "type": "rezervare",
             "specialitate": "Restaurant",
-            "rating": "5",
+            "rating": 2,
             "location": "Str. Wololoo, nr.2",
             "produse": [{
                     "id": 1,
