@@ -3,6 +3,8 @@ import { DatabaseService } from '../../database-service/database.service';
 import { Restaurant } from '../../database-service/restaurant';
 import { Produs } from '../../database-service/produs';
 import { ActivatedRoute, Router } from '@angular/router';
+import { User } from 'src/app/database-service/user';
+import { Comanda } from 'src/app/database-service/comanda';
 
 @Component({
   selector: 'app-details-restaurant',
@@ -50,6 +52,17 @@ export class DetailsRestaurantComponent {
     }
   }
 
+  user_id = JSON.parse(sessionStorage.getItem("user_id") || '{}');
+
+  User: User = {
+    id: 0,
+    username: '',
+    cos: [],
+    comenzi: []
+  };
+
+  cos: Produs[] =[];
+
   ngOnInit(): void {
     this.route.queryParams.subscribe((params) => {
       this.restaurantName = params['restaurant'];
@@ -60,9 +73,21 @@ export class DetailsRestaurantComponent {
       this.setProduse();
       console.log(restaurants);
     });
+
+    this.json.getUser(this.user_id).subscribe((user: User) => {
+      this.User= user;
+      console.log("User: ",this.User);
+      this.cos = this.produse;
+      console.log("Comenzi: ",this.cos)
+
+    });
   }
 
-  addProdusToCart(produs: string) {
+  addProdusToCart(produs: Produs) {
+
+
+
+
     this.router.navigate(['../../', 'cos'], {
       queryParams: { produs: produs },
       relativeTo: this.route,

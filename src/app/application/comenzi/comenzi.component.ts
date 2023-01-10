@@ -31,5 +31,5 @@ export class ComenziComponent {
       console.log("Comenzi: ",this.comenzi)
 
     });
-    console.log("  Comenzi: ",this.comenzi[0].pret )}
+  }
 }
