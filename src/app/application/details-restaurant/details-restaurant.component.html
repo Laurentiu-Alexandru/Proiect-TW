@@ -15,20 +15,23 @@
                         <div *ngFor=" let produs of produse">
                             <button class="produs-layout" style="width: 100% ">
                                 <div class="row">
-                                <div class="col-descriere" style="width: 50%">
-                                    <div class="titlu">
-                                        <p>{{ produs.nume }}</p>
+                                    <div class="col-descriere" style="width: 60%">
+                                        <div class="titlu">
+                                            <p>{{ produs.nume }}</p>
+                                        </div>
+                                        <div class="descriere">
+                                            <p>{{ produs.ingrediente }}</p>
+                                        </div>
+                                        <div class="pret">
+                                            <p>{{ produs.pret }}lei</p>
+                                        </div>
                                     </div>
-                                    <div class="descriere">
-                                        <p>{{ produs.ingrediente }}</p>
+                                    <div class="col-image" style="width: 40%">
+                                        <p class="imageBox">
+                                            <img src="{{produs.produs_img}}" class="responsive">
+                                        </p>
+                                        
                                     </div>
-                                    <div class="pret">
-                                        <p>{{ produs.pret }}lei</p>
-                                    </div>
-                                </div>
-                                <div class="col-image" style="width: 50%">
-                                    <img src="{{produs.produs_img}}">
-                                </div>
                                 </div>
                             </button>
                         </div>
@@ -37,9 +40,7 @@
             </div>
         </div>
         <div class="column-ads" style="width: 25%">
-
         </div>
-
     </div>
 </div>
 <app-footer></app-footer>

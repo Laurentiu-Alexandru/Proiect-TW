@@ -50,7 +50,9 @@
     border: #143d59 5px solid;
     border-radius: 30px;
     background-color: rgba(244, 180, 26, .7);
-    height: 300px;
+    height: 350px;
+    padding-right: 15px;
+
 }
 
 .col-descriere {
@@ -72,4 +74,37 @@
 
 .col-image{
 align-self: center;
+}
+
+.imageBox {
+    align-self: center;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media only screen and (max-width: 1900px) {
+    /* For mobile phones: */
+    [class*="col-descriere"] {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 1300px) {
+    /* For mobile phones: */
+    [class*="col-descriere"] {
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    /* For mobile phones: */
+    [class*="col-descriere"] {
+        font-size: 8px;
+    }
+
 }
