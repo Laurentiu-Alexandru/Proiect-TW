@@ -80,3 +80,7 @@ ul li a:focus {
 ul li {
     margin: 1em;
 }
+
+.footer {
+    margin-top: 600px;
+}
