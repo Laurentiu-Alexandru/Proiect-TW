@@ -1,17 +1,15 @@
         /* You can add global styles to this file, and also import other style files */
-        
+
         * {
             box-sizing: border-box;
         }
-        
+
         body {
             margin: 0;
             font-family: Roboto, "Helvetica Neue", sans-serif;
             background-image: url("../src/assets/images/Background.png");
-            /* Center the image */
             background-repeat: no-repeat;
-            /* Do not repeat the image */
-            background-size: cover;
-            /* Resize the background image to cover the entire container */
+            background-attachment: fixed;
+            background-size: 100% 100%;
             overflow-x: hidden;
         }
