@@ -1,10 +1,12 @@
 <app-header>
 </app-header>
 <ul class="container">
-    <li *ngFor="let produs of produse">
+    <li *ngFor="let produs of comenzi">
         <a>
-            <h2>{{produs.nume}}</h2>
-            <p>{{produs.pret}} lei</p>
+            <h1>{{produs.restaurant}}</h1>
+            <hr style="border: 5px solid black;"><br>
+            <h2>Produs: {{produs.nume}}</h2><br><br><br><br>
+            <p style="margin-left:40% ;">Pret: {{produs.pret}} lei</p>
         </a>
     </li>
 

@@ -52,4 +52,9 @@ export class DatabaseService {
     const apiUrl_restaurants = `${this.apiUrl_restaurants}/${Restaurant_Id}`;
     return this.http.get<Restaurant>(apiUrl_restaurants);
   }
+
+  updateEvent(user: User): Observable<User>  {
+    const user_url = `${this.apiUrl_users}/${user.id}`;
+    return this.http.patch<User>(user_url, user, httpOptions);
+  }
 }

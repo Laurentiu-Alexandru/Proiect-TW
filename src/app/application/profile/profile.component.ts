@@ -20,7 +20,8 @@ export class ProfileComponent {
 
   ) {}
 
-    User: User = this.auth.User;
+   username = sessionStorage.getItem("username");
+
   ngOnInit(): void {
 
   }
