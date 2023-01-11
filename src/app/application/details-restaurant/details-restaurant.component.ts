@@ -32,7 +32,7 @@ export class DetailsRestaurantComponent {
   };
 
   constructor(
-    private json: DatabaseService,
+    private db: DatabaseService,
     private route: ActivatedRoute,
     private router: Router
   ) {}
@@ -68,29 +68,45 @@ export class DetailsRestaurantComponent {
       this.restaurantName = params['restaurant'];
     });
 
-    this.json.getRestaurants().subscribe((restaurants: Restaurant[]) => {
+    this.db.getRestaurants().subscribe((restaurants: Restaurant[]) => {
       this.restaurants = restaurants;
       this.setProduse();
       console.log(restaurants);
     });
 
-    this.json.getUser(this.user_id).subscribe((user: User) => {
+    this.db.getUser(this.user_id).subscribe((user: User) => {
       this.User= user;
-      console.log("User: ",this.User);
-      this.cos = this.produse;
-      console.log("Comenzi: ",this.cos)
 
+      console.log("User: ",this.User);
+      this.cos=user.cos;
+      console.log("Cos: ",this.cos);
     });
   }
 
   addProdusToCart(produs: Produs) {
 
+    let k:number =1;
+    for(let p in this.User.cos){
+      k=k+1;
+    }
 
+    produs.id = k;
 
+    this.User.cos.push(produs);
+    this.db.updateUser(this.User).subscribe(()=>{console.log('Update User');
+    console.log(this.User.cos);
+    this.cos.filter((e) => e.id === produs.id);
+    // this.db.updateCos(this.User, this.cos).subscribe(()=>{console.log('Update Cos');
+    // console.log(this.cos);
+    // this.cos.filter((e) => e.id === produs.id);
 
     this.router.navigate(['../../', 'cos'], {
-      queryParams: { produs: produs },
+      queryParams: { produs: produs.nume },
       relativeTo: this.route,
     });
+
+  });
+
+
   }
 }

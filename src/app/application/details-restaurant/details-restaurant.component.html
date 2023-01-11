@@ -13,7 +13,7 @@
                     </div>
                     <div class="meniu" style="width: 50%">
                         <div *ngFor=" let produs of produse">
-                            <button class="produs-layout" style="width: 100% " onclick="addProdusToCart(produs)">
+                            <button class="produs-layout" style="width: 100% " (click)="addProdusToCart(produs)">
                                 <div class="row">
                                     <div class="col-descriere" style="width: 60%">
                                         <div class="titlu">
@@ -30,7 +30,7 @@
                                         <p class="imageBox">
                                             <img src="{{produs.produs_img}}" class="responsive">
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                             </button>

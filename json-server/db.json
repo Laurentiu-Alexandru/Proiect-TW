@@ -17,6 +17,12 @@
                     "nume": "Burger Apollo pui + cartofi",
                     "ingrediente": "pui",
                     "pret": 9.9
+                },
+                {
+                    "id": 3,
+                    "nume": "Gyros pui",
+                    "ingrediente": "460g",
+                    "pret": 26.5
                 }
             ],
             "comenzi": [{
