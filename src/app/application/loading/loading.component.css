@@ -1,19 +1,17 @@
 body {
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .page-container {
     display: inline-block;
-    justify-content: center;
-    align-items: center;
     background-color: #ffffff;
     flex-wrap: wrap;
-    padding-top: 100px;
-    padding-left: 300px;
-    padding-right: 50%;
-    padding-bottom: 220px;
+    padding-top: 15vh;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    padding-bottom: 20vh;
     font-size: 30px;
-    overflow: hidden;
     overflow-y: hidden;
 }
 

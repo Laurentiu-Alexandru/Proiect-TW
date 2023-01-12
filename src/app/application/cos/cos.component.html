@@ -7,7 +7,7 @@
             <div class="col-md-9">
                 <div class="ibox">
                     <div class="ibox-title">
-                        <span class="pull-right">(<strong></strong>) items</span>
+                        <span class="pull-right">(<strong>{{k}}</strong>) items</span>
                         <h5>Items in your cart</h5>
                     </div>
                     <div *ngFor="let produs of produse" class="ibox-content">
@@ -16,8 +16,9 @@
                                 <tbody>
                                     <tr>
                                         <td width="90">
-                                            <div class="cart-product-imitation">
-                                            </div>
+
+                                            <img class="cart-product-imitation" src={{produs.produs_img}}>
+
                                         </td>
                                         <td class="desc">
                                             <h3>
@@ -34,7 +35,7 @@
                                             </dl>
 
                                             <div class="m-t-sm">
-                                                <a href="#" class="text-muted"><i class="fa fa-trash"  ></i> Remove item</a>
+                                                <a class="text-muted" (click)="deleteProdus(produs)"><i class="fa fa-trash"  ></i> Remove item</a>
                                             </div>
                                         </td>
 
@@ -67,31 +68,16 @@
                             Total
                             </span>
                             <h2 class="font-bold">
-                                0 lei
+                                {{pret}} lei
                             </h2>
 
                             <hr>
-                            <span class="text-muted small">
-                            *For United States, France and Germany applicable sales tax will be applied
-                            </span>
                             <div class="m-t-sm">
                                 <div class="btn-group">
-                                    <a routerLink="/plateste" class="btn btn-primary btn-sm"><i class="fa fa-shopping-cart"></i> Checkout</a>
-                                    <a routerLink="/main" class="btn btn-white btn-sm"> Cancel</a>
+                                    <a routerLink="/plateste" class="btn btn-primary btn-sm">Checkout</a><br>
+                                    <a routerLink="/main" class="btn btn-danger btn-sm"> Cancel</a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="ibox">
-                        <div class="ibox-title">
-                            <h5>Support</h5>
-                        </div>
-                        <div class="ibox-content text-center">
-                            <h3><i class="fa fa-phone"></i> +43 100 783 001</h3>
-                            <span class="small">
-                        Please contact with us if you have any questions. We are avalible 24h.
-                    </span>
                         </div>
                     </div>
                 </div>

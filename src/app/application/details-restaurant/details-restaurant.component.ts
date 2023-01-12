@@ -85,7 +85,7 @@ export class DetailsRestaurantComponent {
 
   addProdusToCart(produs: Produs) {
 
-    let k:number =1;
+    let k:number = 1;
     for(let p in this.User.cos){
       k=k+1;
     }
