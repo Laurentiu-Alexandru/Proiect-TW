@@ -24,6 +24,7 @@ import { CosComponent } from './application/cos/cos.component';
 import { PlatesteComponent } from './application/plateste/plateste.component';
 import { ComenziComponent } from './application/comenzi/comenzi.component';
 import { LoadingComponent } from './application/loading/loading.component';
+import { CardComponent } from './application/rinder/card/card.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { LoadingComponent } from './application/loading/loading.component';
     CosComponent,
     PlatesteComponent,
     ComenziComponent,
-    LoadingComponent
+    LoadingComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

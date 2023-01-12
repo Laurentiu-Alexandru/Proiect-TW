@@ -9,10 +9,7 @@ import { Subject} from 'rxjs';
 export class RinderComponent {
   parentSubject:Subject<string> = new Subject();
 
-  constructor() {
-
-  }
-
+  constructor() {}
 
   cardAnimation(value: any) {
     this.parentSubject.next(value);

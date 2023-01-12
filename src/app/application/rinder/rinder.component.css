@@ -1,85 +1,131 @@
-#container {
-    width: 500px;
-    margin: auto !important;
-    display: block;
-    height: 500px;
+.tbg {
+    overflow-x: hidden;
+}
+
+.tbg {
+    height: 720px;
+    width: 400px;
+    background-color: #fff;
+    margin: 0 auto;
+    border: 1px solid #c0c0c0;
+}
+
+.tbgwrap {
+    padding: 10px;
+}
+
+.theader {
+    height: 65px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.theader i.fa-comments {
+    color: #c0c0c0;
+    font-size: 40px;
+    display: inline-block;
+    float: right;
+    padding: 10px 20px;
     position: relative;
-    list-style-type: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
-.buddy {
-    display: none;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    padding: 20px;
-    width: 360px;
-    height: 360px;
+.theader i.fa-cog {
+    color: #c0c0c0;
+    font-size: 40px;
+    display: inline-block;
+    float: left;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.tlogo {
+    width: 100px;
+    margin-left: 25%;
+    padding: 10px;
+}
+
+.tlogo img {
+    width: 100px;
+}
+
+.tno {
+    background-color: #fff;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    position: relative;
+    display: inline-block;
     top: 50px;
-    left: 50px;
-    position: absolute;
-    cursor: hand;
+    left: 25px;
+    border: 10px solid #f0f0f0;
 }
 
-.rotate-left {
-    transform: rotate(30deg) scale(0.8);
-    transition: 1s;
-    margin-left: 400px;
-    cursor: e-resize;
-    opacity: 0;
-    z-index: 10;
+.tno i {
+    color: #ff695b;
+    font-size: 80px;
+    padding: 17px 28px;
 }
 
-.rotate-right {
-    transform: rotate(-30deg) scale(0.8);
-    transition: 1s;
-    opacity: 0;
-    margin-left: -400px;
-    cursor: w-resize;
-    z-index: 10;
+.ti {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    left: 12px;
+    top: 30px;
+    border: 10px solid #f0f0f0;
 }
 
-.avatar {
-    background: #222;
-    width: 340px;
-    height: 340px;
-    display: block;
-    margin-top: 10px;
-    margin-left: 10px;
-    background-size: auto 160% !important;
-    background-position: center;
-    background-repeat: no-repeat;
+.ti .fa-info {
+    font-size: 23px;
+    padding: 15px 20px;
+    color: #398beb;
 }
 
-.like {
-    border-radius: 5px;
-    padding: 5px 10px;
-    border: 2px solid green;
-    color: green;
+.tyes {
+    background-color: #fff;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    top: 48px;
+    left: 0px;
+    border: 10px solid #f0f0f0;
+}
+
+.tyes i {
+    color: #5de19c;
+    font-size: 60px;
+    padding: 35px 30px;
+}
+
+.credit {
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 60px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 2px 0px;
+}
+
+.credit a {
+    font-size: 7px;
+    letter-spacing: 5px;
+    color: #c0c0c0;
+    text-decoration: none;
     text-transform: uppercase;
-    font-size: 15px;
-    position: absolute;
-    top: 50px;
-    right: 40px;
-    text-shadow: none;
-}
-
-.dislike {
-    border-radius: 5px;
-    padding: 5px 10px;
-    border: 2px solid red;
-    color: red;
-    text-transform: uppercase;
-    font-size: 15px;
-    position: absolute;
-    top: 50px;
-    left: 40px;
-    text-shadow: none;
+    font-family: 'Helvetica', sans-serif;
+    font-style: italic;
 }
