@@ -5,6 +5,7 @@ import { Produs } from '../../database-service/produs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { User } from 'src/app/database-service/user';
 import { Comanda } from 'src/app/database-service/comanda';
+import { Card } from 'src/app/database-service/card';
 
 @Component({
   selector: 'app-details-restaurant',
@@ -54,13 +55,21 @@ export class DetailsRestaurantComponent {
 
   user_id = JSON.parse(sessionStorage.getItem("user_id") || '{}');
 
+  user_card: Card={
+    Owner_Name: '',
+    Card_Number: '',
+    Expiration_Date: '',
+    CVV: 0,
+  }
+
   User: User = {
     id: 0,
     username: '',
     cos: [],
-    comenzi: []
+    comenzi: [],
+    card: this.user_card,
+    Adress: '',
   };
-
   cos: Produs[] =[];
 
   ngOnInit(): void {

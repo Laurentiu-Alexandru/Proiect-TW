@@ -35,7 +35,7 @@
                                             </dl>
 
                                             <div class="m-t-sm">
-                                                <a class="text-muted" (click)="deleteProdus(produs)"><i class="fa fa-trash"  ></i> Remove item</a>
+                                                <a class="text-muted" (click)="deleteProdus(produs)" style="cursor: pointer;"><i class="fa fa-trash"  ></i> Remove item</a>
                                             </div>
                                         </td>
 
@@ -74,7 +74,7 @@
                             <hr>
                             <div class="m-t-sm">
                                 <div class="btn-group">
-                                    <a routerLink="/plateste" class="btn btn-primary btn-sm">Checkout</a><br>
+                                    <a (click)="Checkout()" style="color:white" class="btn btn-primary btn-sm">Checkout</a><br>
                                     <a routerLink="/main" class="btn btn-danger btn-sm"> Cancel</a>
                                 </div>
                             </div>

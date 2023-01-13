@@ -5,6 +5,7 @@ import { Comanda } from 'src/app/database-service/comanda';
 import { DatabaseService } from 'src/app/database-service/database.service';
 import { Produs } from 'src/app/database-service/produs';
 import { User } from 'src/app/database-service/user';
+import { Card } from 'src/app/database-service/card';
 
 @Component({
   selector: 'app-cos',
@@ -16,11 +17,20 @@ export class CosComponent {
     private route: ActivatedRoute) { }
   user_id = JSON.parse(sessionStorage.getItem("user_id") || '{}');
 
+  user_card: Card={
+    Owner_Name: '',
+    Card_Number: '',
+    Expiration_Date: '',
+    CVV: 0,
+  }
+
   User: User = {
     id: 0,
     username: '',
     cos: [],
-    comenzi: []
+    comenzi: [],
+    card: this.user_card,
+    Adress: '',
   };
 
   pret: number = 0;
@@ -42,6 +52,17 @@ export class CosComponent {
     this.User.cos= this.cos_nou
     this.db.updateUser(this.User).subscribe(( )=>{ window.location.reload();});
 
+
+  }
+
+  Checkout(){
+
+    if(this.k==0){
+      window.alert("You have no items in your cart")
+    }
+    else{
+      this.router.navigate(['plateste']);
+    }
 
   }
 

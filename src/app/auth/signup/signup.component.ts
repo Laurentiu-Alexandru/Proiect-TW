@@ -6,6 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { AuthentificationService } from '../auth.service';
 import { DatabaseService } from '../../database-service/database.service';
 import { User } from '../../database-service/user';
+import { Card } from 'src/app/database-service/card';
 
 
 const httpOptions = {
@@ -28,12 +29,22 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {this.json.getUsers().subscribe((user: User[]) => this.users = user);}
 
   users: User[] = [];
+
+  user_card: Card={
+    Owner_Name: '',
+    Card_Number: '',
+    Expiration_Date: '',
+    CVV: 0,
+  }
+
   newUser: User = {
     id: 0,
-    username: "",
+    username: '',
     cos: [],
-    comenzi: []
-  }
+    comenzi: [],
+    card: this.user_card,
+    Adress: '',
+  };
 
   onClickSignup_signup(form: NgForm){
 

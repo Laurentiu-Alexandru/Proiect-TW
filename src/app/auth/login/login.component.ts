@@ -16,6 +16,7 @@ import {
   collection,
   getDoc,
 } from 'firebase/firestore';
+import { Card } from 'src/app/database-service/card';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyDZ273ywvo3Jzs4UUy7KIUiGCTUDCA6aqs',
@@ -45,11 +46,21 @@ const httpOptions = {
 })
 export class LoginComponent implements OnInit {
   users: User[] = [];
+
+  user_card: Card={
+    Owner_Name: '',
+    Card_Number: '',
+    Expiration_Date: '',
+    CVV: 0,
+  }
+
   newUser: User = {
     id: 0,
     username: '',
     cos: [],
-    comenzi: []
+    comenzi: [],
+    card: this.user_card,
+    Adress: '',
   };
 
   constructor(
