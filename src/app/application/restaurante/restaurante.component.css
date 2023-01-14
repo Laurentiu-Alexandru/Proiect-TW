@@ -1,60 +1,143 @@
-    .col-title {
-        width: 100%;
-        height: 50px;
-        background-color: #143d59;
-        border-bottom: 1px rgb(255, 255, 255) solid;
+.col-title {
+    width: 100%;
+    height: 50px;
+    background-color: #143d59;
+    border-bottom: 1px rgb(255, 255, 255) solid;
+}
+
+ul li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+.page-container {
+    background-color: #f4b41a;
+    padding-top: 220px;
+    padding-bottom: 500px;
+    font-size: 25px;
+}
+
+button[data-uid="filtre"] {
+    height: 40px;
+    float: left;
+}
+
+.restaurant-list-element {
+    width: 70%;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: #f4b41a;
+    border: #143d59 solid 2px;
+    padding-bottom: 50px;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.part {
+    float: left;
+    margin-top: 10px;
+    font-size: large;
+    color: #143d59;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.column-filters {
+    float: left;
+    border-right: 2px solid #143d59;
+    width: 25%;
+}
+
+
+.column-ads {
+    border-left: 2px solid #143d59;
+    width: 25%;
+}
+
+.show {
+    display: block;
+}
+
+.box {
+    width: 220px;
+    height: 230px;
+    margin-left: 10%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+.nume-restaurant {
+    color: #f4b41a;
+    background-color: #143d59;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 250px;
+    font-size: 20px;
+    margin-top: -20px;
+    margin-left: -20px;
+    text-align: center;
+}
+
+.rating-restaurant {
+    float: right;
+    margin-top: -100px;
+    color: #f4b41a;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.box-button {
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    width: 220px;
+    height: 230px;
+}
+
+.container-column-restaurants {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+
+.restaurant-banner {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+@media only screen and (max-width: 1900px) {
+
+    /* For mobile phones: */
+    [class*="box"] {
+        margin-bottom: 9%;
     }
-    
-    ul li {
-        list-style-type: none;
-        padding-bottom: 10px;
+
+}
+
+@media only screen and (max-width: 1150px) {
+
+    /* For mobile phones: */
+    [class*="box"] {
+        margin-bottom: 12%;
     }
-    
-    .page-container {
-        background-color: #f4b41a;
-        padding-top: 220px;
-        padding-bottom: 500px;
-        font-size: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    /* For mobile phones: */
+    [class*="box"] {
+        margin-bottom: 16%;
     }
-    
-    button[data-uid="filtre"] {
-        height: 40px;
-        float: left;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="box"] {
+        margin-bottom: 22%;
     }
-    
-    .restaurant-list-element {
-        width: 70%;
-        height: 50px;
-        border-radius: 30px;
-        margin-top: 10px;
-        background-color: #f4b41a;
-        border: #143d59 solid 2px;
-        padding-bottom: 50px;
-        padding-top: 5px;
-        padding-left: 20px;
-    }
-    
-    .part {
-        float: left;
-        margin-top: 10px;
-        font-size: large;
-        color: #143d59;
-        font-weight: 600;
-        letter-spacing: 0.8px;
-    }
-    
-    .column-filters {
-        float: left;
-    }
-    
-    .column-filters {
-        border-left: 2px solid #143d59;
-    }
-    
-    .column-ads {
-        border-right: 2px solid #143d59;
-    }
-    
-    .show {
-        display: block;
-    }
+
+}

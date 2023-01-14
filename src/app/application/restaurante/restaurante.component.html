@@ -2,53 +2,7 @@
 <div class="page-container" style="width: 100%">
 
     <div class="row">
-        <div class="column-ads" style="width: 25%;">
-            <div class="column-filters" style="width: 25%">
-
-
-            </div>
-
-
-            <!-- <form>
-                <p>Alege-ți filtrele:</p>
-                <ul>
-                    <li><input type="checkbox" name="filtre" id="Fastfood" value="Fastfood">
-                        <label for="">Fastfood</label>
-                    </li>
-                    <li><input type="checkbox" name="filtre" id="Salate" value="Salate">
-                        <label for="Salate">Salate</label>
-                    </li>
-                    <li><input type="checkbox" name="filtre" id="Peste" value="Peste">
-                        <label for="Peste">Pește</label>
-                    </li>
-                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                        <label for="Pizza">Pizza</label>
-                    </li>
-                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                        <label for="Pizza">Sushi</label>
-                    </li>
-                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                        <label for="Pizza">Shaorma</label>
-                    </li>
-                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                        <label for="Pizza">Ciorbe/Supe</label>
-                    </li>
-                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                        <label for="Pizza">Vegan</label>
-                    </li>
-                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                        <label for="Pizza">Cafea</label>
-                    </li>
-                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                        <label for="Pizza">Noodoodles</label>
-                    </li>
-                    <li><input type="checkbox" name="filtre" id="Pizza" value="Pizza">
-                        <label for="Pizza">Grătar</label>
-                    </li>
-                </ul>
-            </form>
-            <p><button type="button" class="btn btn-secondary" style="background-color:#143d59 ;">Caută</button>
-            </p>-->
+        <div class="column-filters">
             <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')"> Show all</button><br>
                 <button class="btn" onclick="filterSelection('Mâncare grecească')"> Fastfood</button><br>
@@ -57,14 +11,19 @@
                 <button class="btn" onclick="filterSelection('Mâncare vegană')"> Pizza</button><br>
             </div>
         </div>
-        <div class="container column-restaurants" style="width: 50%">
-            <ul>
-                <div *ngFor=" let restaurant of restaurants">
-                    <ul><button class=" restaurant-list-element {{restaurant.specialitate}}" (click)="goToRestaurant(restaurant.name)">
-                            <p class="part  {{restaurant.specialitate}}">{{restaurant.name}} - {{restaurant.specialitate}}</p>
-                        </button></ul>
+        <div class="container-column-restaurants">
+            <div *ngFor=" let restaurant of restaurants; let j = index">
+                <div class="box">
+                    <div (click)="goToRestaurant(restaurant.name)" class="box-button">
+                        <img src="{{restaurant.banner_img}}" alt="buttonpng" class="restaurant-banner">
+                        <div class="card-body">
+                            <h5 class="nume-restaurant">{{restaurant.name}}</h5>
+                        </div>
+                    </div>
                 </div>
-            </ul>
+            </div>
+        </div>
+        <div class="column-ads">
         </div>
     </div>
 </div>
