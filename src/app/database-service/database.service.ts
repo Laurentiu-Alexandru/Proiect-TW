@@ -31,8 +31,8 @@ export class DatabaseService {
     // 'https://proiect-tw01-default-rtdb.europe-west1.firebasedatabase.app/users';
 
 
-    apiUrl_users = 'http://localhost:5000/users';
-    apiUrl_restaurants = 'http://localhost:5000/restaurants';
+    apiUrl_users = 'https://proiect-tw01-default-rtdb.europe-west1.firebasedatabase.app/users.json';
+    apiUrl_restaurants = 'https://proiect-tw01-default-rtdb.europe-west1.firebasedatabase.app/restaurants.json';
 
   constructor(private http: HttpClient) {}
 
