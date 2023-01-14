@@ -12,7 +12,7 @@
                         <p class="linie"></p>
                     </div>
                     <div class="meniu" style="width: 50%">
-                        <div *ngFor=" let produs of produse">
+                        <div *ngFor=" let produs of restaurant.produse">
                             <button class="produs-layout" style="width: 100% " (click)="addProdusToCart(produs)">
                                 <div class="row">
                                     <div class="col-descriere" style="width: 60%">

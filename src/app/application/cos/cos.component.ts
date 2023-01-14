@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthentificationService } from 'src/app/auth/auth.service';
-import { Comanda } from 'src/app/database-service/comanda';
 import { DatabaseService } from 'src/app/database-service/database.service';
 import { Produs } from 'src/app/database-service/produs';
 import { User } from 'src/app/database-service/user';

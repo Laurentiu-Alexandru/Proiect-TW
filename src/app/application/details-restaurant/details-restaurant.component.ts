@@ -4,7 +4,6 @@ import { Restaurant } from '../../database-service/restaurant';
 import { Produs } from '../../database-service/produs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { User } from 'src/app/database-service/user';
-import { Comanda } from 'src/app/database-service/comanda';
 import { Card } from 'src/app/database-service/card';
 
 @Component({
@@ -13,21 +12,15 @@ import { Card } from 'src/app/database-service/card';
   styleUrls: ['./details-restaurant.component.css'],
 })
 export class DetailsRestaurantComponent {
+  produse: Produs[] = []
+
   restaurant: Restaurant = {
     id: 0,
     name: '',
     type: '',
     rating: 0,
     location: '',
-    produse: [
-      {
-        id: 0,
-        nume: '',
-        ingrediente: '',
-        produs_img: '',
-        pret: 0,
-      },
-    ],
+    produse: this.produse,
     banner_img: '',
     specialitate: '',
   };
@@ -39,19 +32,8 @@ export class DetailsRestaurantComponent {
   ) {}
 
   restaurants: Restaurant[] = [];
-  produse: Produs[] = [];
   restaurantName: string = '';
 
-  setProduse() {
-    for (let i of this.restaurants) {
-      if (i.name == this.restaurantName) {
-        for (let j = 0; j < i.produse.length; j++) {
-          this.produse.push(i.produse[j]);
-          console.log(this.produse);
-        }
-      }
-    }
-  }
 
   user_id = JSON.parse(sessionStorage.getItem("user_id") || '{}');
 
@@ -79,7 +61,6 @@ export class DetailsRestaurantComponent {
 
     this.db.getRestaurants().subscribe((restaurants: Restaurant[]) => {
       this.restaurants = restaurants;
-      this.setProduse();
       console.log(restaurants);
     });
 
@@ -100,14 +81,11 @@ export class DetailsRestaurantComponent {
     }
 
     produs.id = k;
-
+    this.User.cos
     this.User.cos.push(produs);
     this.db.updateUser(this.User).subscribe(()=>{console.log('Update User');
     console.log(this.User.cos);
     this.cos.filter((e) => e.id === produs.id);
-    // this.db.updateCos(this.User, this.cos).subscribe(()=>{console.log('Update Cos');
-    // console.log(this.cos);
-    // this.cos.filter((e) => e.id === produs.id);
 
     this.router.navigate(['../../', 'cos'], {
       queryParams: { produs: produs.nume },

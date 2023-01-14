@@ -12,7 +12,7 @@ export class AuthentificationService {
     CVV: 0,
   }
 
-  User: User = {
+  User:User = {
     id: 0,
     username: '',
     cos: [],

@@ -1,5 +1,4 @@
 import { Card } from "./card";
-import { Comanda } from "./comanda";
 import { Produs } from "./produs";
 
 export interface User{
@@ -8,7 +7,7 @@ export interface User{
   email?: string;
   password?: string;
   cos: Produs[];
-  comenzi: Comanda[];
+  comenzi: Produs[];
   card: Card;
   Adress: string;
 }

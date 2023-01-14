@@ -10,7 +10,6 @@ import { getFirestore } from 'firebase/firestore';
 import { User } from './user';
 import { Restaurant } from './restaurant';
 import { Produs } from './produs';
-import { Comanda } from './comanda';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -65,7 +64,7 @@ export class DatabaseService {
     return this.http.patch<User>(user_url, cos, httpOptions);
   }
 
-  updateComenzi(user: User, comenzi: Comanda[]): Observable<User>  {
+  updateComenzi(user: User, comenzi: Produs[]): Observable<User>  {
     const user_url = `${this.apiUrl_users}/${user.id}`;
     return this.http.patch<User>(user_url, comenzi, httpOptions);
   }

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthentificationService } from 'src/app/auth/auth.service';
 import { Produs } from 'src/app/database-service/produs';
-import { Comanda } from 'src/app/database-service/comanda';
 import { User } from 'src/app/database-service/user';
 import { DatabaseService } from '../../database-service/database.service';
 import { Card } from 'src/app/database-service/card';
@@ -30,7 +29,7 @@ export class ComenziComponent {
     card: this.user_card,
     Adress: '',
   };
-  comenzi: Comanda[] =[];
+  comenzi: Produs[] =[];
 
   ngOnInit(): void {
     this.db.getUser(this.user_id).subscribe((user: User) => {

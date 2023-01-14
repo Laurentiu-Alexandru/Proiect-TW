@@ -1,3 +1,5 @@
+import { Produs } from "./produs";
+
 export interface Restaurant {
   id: number;
   name: string;
@@ -5,14 +7,6 @@ export interface Restaurant {
   specialitate: string
   rating: number;
   location: string;
-  produse: [
-    {
-      id: number;
-      nume: string;
-      produs_img: string;
-      ingrediente: string;
-      pret: number;
-    }
-  ];
+  produse: Produs[];
   banner_img: string;
 }

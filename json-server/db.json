@@ -4,59 +4,48 @@
             "username": "admin",
             "email": "admin@admin.com",
             "password": "admin",
-            "cos": [{
-                "id": 1,
-                "nume": "Shaorma de Vită,curcan mică",
-                "ingrediente": "Lipie, carne de vită curcan, cartofi, salată de varză cu castraveți murați sau salată de crudități, maioneză, ketchup 350g",
-                "pret": 25,
-                "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Shaorma_de_vita.jpg"
-            }],
-            "card": [{
+            "cos": [
+
+            ],
+            "card": {
                 "Owner_Name": "",
                 "Card_Number": "",
                 "Expiration_Date": "",
-                "CVV": 0
-            }],
-            "comenzi": [{
-                    "id": 1,
-                    "restaurant": "Antalya",
-                    "nume": "Shaorma de vita mica",
-                    "ingrediente": "pui",
-                    "pret": 20
-                },
-                {
-                    "id": 2,
-                    "restaurant": "Antalya",
-                    "nume": "Shaorma XXL de pui",
-                    "ingrediente": "pui",
-                    "pret": 32.5
-                },
-                {
-                    "id": 3,
-                    "restaurant": "Antalya",
-                    "nume": "Shaorma de vita,cucan Mare",
-                    "ingrediente": "pui",
-                    "pret": 29
-                }
-            ]
+                "CVV": ""
+            },
+            "comenzi": [
+
+            ],
+            "Adress": ""
         },
         {
             "id": 2,
             "username": "user2",
-            "email": "user2@user.com",
-            "password": "pass"
-        },
-        {
-            "id": 3,
-            "username": "user2",
+            "cos": [{
+                    "id": 1,
+                    "nume": "Shaorma de Vită,curcan mare",
+                    "ingrediente": "Lipie, carne de vită curcan, cartofi, salată de varză cu castraveți murați sau salată de crudatăți, maioneză, ketchup 570g",
+                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Shaorma_de_vita_2.jpg",
+                    "pret": 29
+                },
+                {
+                    "id": 2,
+                    "nume": "Shaorma de Vită,curcan mică",
+                    "ingrediente": "Lipie, carne de vită curcan, cartofi, salată de varză cu castraveți murați sau salată de crudități, maioneză, ketchup 350g",
+                    "pret": 25,
+                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Shaorma_de_vita.jpg"
+                }
+            ],
+            "comenzi": [],
+            "card": {
+                "Owner_Name": "Jhon Smith",
+                "Card_Number": "1234123412341234",
+                "Expiration_Date": "2025-12",
+                "CVV": "123"
+            },
+            "Adress": "Delivery Address",
             "email": "user2@user2.user2",
             "password": "user2"
-        },
-        {
-            "id": 4,
-            "username": "da",
-            "email": "",
-            "password": "da"
         }
     ],
     "restaurants": [{

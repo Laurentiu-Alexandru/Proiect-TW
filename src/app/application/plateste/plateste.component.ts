@@ -6,6 +6,7 @@ import { Card } from 'src/app/database-service/card';
 import { DatabaseService } from 'src/app/database-service/database.service';
 import { Produs } from 'src/app/database-service/produs';
 import { User } from 'src/app/database-service/user';
+import { CardComponent } from '../rinder/card/card.component';
 
 @Component({
   selector: 'app-plateste',
@@ -37,15 +38,10 @@ export class PlatesteComponent {
   pret: number = 0;
   produse: Produs[] =[];
 
-  Plateste(form: NgForm){
+  comenzi_updated: Produs[] = [];
 
-    const name_input = document.getElementById('fname');
-    const email_input = document.getElementById('email');
-    const address_input = document.getElementById('adr');
-    const cardname_input = document.getElementById('cname');
-    const cardnumber_input = document.getElementById('ccnum');
-    const expirationdate_input = document.getElementById('expdate');
-    const cvv_input = document.getElementById('cvv');
+
+  Plateste(form: NgForm){
 
     const value = form.value;
 
@@ -57,14 +53,27 @@ export class PlatesteComponent {
     const expdate = value.expdate;
     const cvv = value.cvv;
 
-    this.user_card.Owner_Name=cname;
-    this.user_card.Card_Number =ccnum;
-    this.user_card.Expiration_Date=expdate;
-    this.user_card.CVV=cvv;
+    this.User.card.Owner_Name = cname;
+    this.User.card.Card_Number = ccnum;
+    this.User.card.Expiration_Date = expdate;
+    this.User.card.CVV = cvv;
 
     this.User.Adress=adr;
 
-    this.db.updateUser(this.User).subscribe(( )=>{this.router.navigate(['loading']);});
+
+    this.comenzi_updated = this.User.comenzi;
+
+
+    for(let i in this.User.cos){
+      this.User.cos[i].id = this.User.comenzi.length+1;
+      this.User.comenzi.push( this.User.cos[i])
+      this.User.cos.pop();
+    }
+
+    this.db.updateUser(this.User).subscribe(( )=>{
+      console.log(this.User);
+      this.router.navigate(['loading']);
+    });
 
   }
 
@@ -81,4 +90,5 @@ export class PlatesteComponent {
       console.log("pret Total:", this.pret);
     });
    }
+
 }
