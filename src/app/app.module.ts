@@ -25,11 +25,6 @@ import { PlatesteComponent } from './application/plateste/plateste.component';
 import { ComenziComponent } from './application/comenzi/comenzi.component';
 import { LoadingComponent } from './application/loading/loading.component';
 import { CardComponent } from './application/rinder/card/card.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
-import { provideAuth,getAuth } from '@angular/fire/auth';
-import { provideDatabase,getDatabase } from '@angular/fire/database';
-
 
 @NgModule({
   declarations: [
@@ -58,9 +53,6 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
-    provideDatabase(() => getDatabase()),
   ],
   providers: [AuthentificationService, DatabaseService],
   bootstrap: [AppComponent]
