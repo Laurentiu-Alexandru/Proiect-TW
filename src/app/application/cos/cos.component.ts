@@ -34,13 +34,13 @@ export class CosComponent {
 
   pret: number = 0;
   k: number = 0;
-  produse: Produs[] = [];
+  cos: Produs[] = [];
 
   cos_nou: Produs[] = [];
 
   deleteProdus(produs:Produs){
 
-    for(let i of this.produse){
+    for(let i of this.cos){
       if(i == produs){
         console.log("found it!")
       }
@@ -69,8 +69,8 @@ export class CosComponent {
     this.db.getUser(this.user_id).subscribe((user: User) => {
       this.User= user;
       console.log("User: ",this.User)
-      this.produse = user.cos
-      console.log("Produse: ",this.produse)
+      this.cos = user.cos
+      console.log("Produse: ",this.cos)
 
       for(let i of this.User.cos){
         this.pret = this.pret + i.pret;

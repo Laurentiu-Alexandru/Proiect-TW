@@ -4,7 +4,7 @@ export interface Restaurant {
   id: number;
   name: string;
   type: string;
-  specialitate: string
+  filtre: string
   rating: number;
   location: string;
   produse: Produs[];

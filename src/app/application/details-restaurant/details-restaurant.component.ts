@@ -22,7 +22,7 @@ export class DetailsRestaurantComponent {
     location: '',
     produse: this.produse,
     banner_img: '',
-    specialitate: '',
+    filtre: '',
   };
 
   constructor(
@@ -65,11 +65,11 @@ export class DetailsRestaurantComponent {
     });
 
     this.db.getUser(this.user_id).subscribe((user: User) => {
-      this.User= user;
+      this.User = user;
 
-      console.log("User: ",this.User);
-      this.cos=user.cos;
-      console.log("Cos: ",this.cos);
+      console.log("User: ", this.User);
+      this.cos = user.cos;
+      console.log("Cos: ", this.cos);
     });
   }
 

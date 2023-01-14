@@ -1,12 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-
-import { initializeApp } from 'firebase/app';
-import { getDatabase } from 'firebase/database';
-
-import { getFirestore } from 'firebase/firestore';
-
 import { User } from './user';
 import { Restaurant } from './restaurant';
 import { Produs } from './produs';
@@ -26,46 +20,81 @@ export class DatabaseService {
   // PATCH- face update la un element dupa id din json
   // PUT si PATCH fac cam aceleasi lucruri
   // DELETE- sterge elementul dupa id din json
-
-  // apiUrl_users =
-    // 'https://proiect-tw01-default-rtdb.europe-west1.firebasedatabase.app/users';
-
-
-    apiUrl_users = 'https://proiect-tw01-default-rtdb.europe-west1.firebasedatabase.app/users.json';
-    apiUrl_restaurants = 'https://proiect-tw01-default-rtdb.europe-west1.firebasedatabase.app/restaurants.json';
-
   constructor(private http: HttpClient) {}
 
+  // JSON-SERVER
+  //   apiUrl_users = 'http://localhost:5000/users';
+  //   apiUrl_restaurants = 'http://localhost:5000/restaurants';
+
+
+
+  // getUsers(): Observable<User[]> {
+  //   return this.http.get<User[]>(this.apiUrl_users);
+  // }
+
+  // getUser(User_Id: number): Observable<User> {
+  //   const user_url = `${this.apiUrl_users}/${User_Id }`;
+  //   return this.http.get<User>(user_url);
+  // }
+
+  // getRestaurants(): Observable<Restaurant[]> {
+  //   return this.http.get<Restaurant[]>(this.apiUrl_restaurants );
+  // }
+
+  // getRestaurant(Restaurant_Id: number): Observable<Restaurant> {
+  //   const apiUrl_restaurants = `${this.apiUrl_restaurants}/${Restaurant_Id }`;
+  //   return this.http.get<Restaurant>(apiUrl_restaurants);
+  // }
+
+  // updateUser(user: User): Observable<User>  {
+  //   const user_url = `${this.apiUrl_users}/${user.id }`;
+  //   return this.http.patch<User>(user_url, user, httpOptions);
+  // }
+
+  // updateCos(user: User, cos: Produs[]): Observable<User>  {
+  //   const user_url = `${this.apiUrl_users}/${user.id}`;
+  //   return this.http.patch<User>(user_url, cos, httpOptions);
+  // }
+
+  // updateComenzi(user: User, comenzi: Produs[]): Observable<User>  {
+  //   const user_url = `${this.apiUrl_users}/${user.id}`;
+  //   return this.http.patch<User>(user_url, comenzi, httpOptions);
+  // }
+
+  // FIREBASE DATABASE
+  apiUrl_users = 'https://proiect-tw01-default-rtdb.europe-west1.firebasedatabase.app/users';
+  apiUrl_restaurants = 'https://proiect-tw01-default-rtdb.europe-west1.firebasedatabase.app/restaurants';
+
   getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(this.apiUrl_users);
+    return this.http.get<User[]>(this.apiUrl_users + '.json');
   }
 
   getUser(User_Id: number): Observable<User> {
-    const user_url = `${this.apiUrl_users}/${User_Id}`;
+    const user_url = `${this.apiUrl_users}/${User_Id + '.json'}`;
     return this.http.get<User>(user_url);
   }
 
   getRestaurants(): Observable<Restaurant[]> {
-    return this.http.get<Restaurant[]>(this.apiUrl_restaurants);
+    return this.http.get<Restaurant[]>(this.apiUrl_restaurants + '.json');
   }
 
   getRestaurant(Restaurant_Id: number): Observable<Restaurant> {
-    const apiUrl_restaurants = `${this.apiUrl_restaurants}/${Restaurant_Id}`;
+    const apiUrl_restaurants = `${this.apiUrl_restaurants}/${Restaurant_Id + '.json'}`;
     return this.http.get<Restaurant>(apiUrl_restaurants);
   }
 
   updateUser(user: User): Observable<User>  {
-    const user_url = `${this.apiUrl_users}/${user.id}`;
+    const user_url = `${this.apiUrl_users}/${user.id + '.json'}`;
     return this.http.patch<User>(user_url, user, httpOptions);
   }
 
   updateCos(user: User, cos: Produs[]): Observable<User>  {
-    const user_url = `${this.apiUrl_users}/${user.id}`;
+    const user_url = `${this.apiUrl_users}/${user.id + '.json'}`;
     return this.http.patch<User>(user_url, cos, httpOptions);
   }
 
   updateComenzi(user: User, comenzi: Produs[]): Observable<User>  {
-    const user_url = `${this.apiUrl_users}/${user.id}`;
+    const user_url = `${this.apiUrl_users}/${user.id,'.json'}`;
     return this.http.patch<User>(user_url, comenzi, httpOptions);
   }
 }
