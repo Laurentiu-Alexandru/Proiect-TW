@@ -18,6 +18,14 @@
           "nume": "Meniu mediu crispy + racoritoare",
           "ingrediente": "480g",
           "pret": 38.5
+        },
+        {
+          "id": 3,
+          "nume": "Shaorma XXL de pui",
+          "ingrediente": "Lipie, carne, cartofi, salată de varză cu castraveți murați sau salată de crudități, maioneză, ketchup, tzatziki 740g",
+          "pret": 32.5,
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/shaorma.png",
+          "restaurant": "Antalya"
         }
       ],
       "card": {

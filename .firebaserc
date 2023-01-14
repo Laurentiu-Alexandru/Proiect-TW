@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "proiect-tw01"
+  },
+  "targets": {
+    "proiect-tw01": {
+      "hosting": {
+        "Proiect-TW": [
+          "proiect-tw01"
+        ]
+      }
+    }
   }
 }
