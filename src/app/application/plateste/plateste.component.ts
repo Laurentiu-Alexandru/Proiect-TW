@@ -63,12 +63,14 @@ export class PlatesteComponent {
 
     this.comenzi_updated = this.User.comenzi;
 
-
-    for(let i in this.User.cos){
-      this.User.cos[i].id = this.User.comenzi.length+1;
-      this.User.comenzi.push( this.User.cos[i])
+    for(let i = 0; i < this.User.cos.length; i++){
+      this.User.comenzi.push(this.User.cos[i])
+    }
+    let k = this.User.cos.length;
+    for(let i = 0; i < k; i++){
       this.User.cos.pop();
     }
+
 
     this.db.updateUser(this.User).subscribe(( )=>{
       console.log(this.User);

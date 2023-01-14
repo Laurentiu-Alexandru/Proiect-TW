@@ -77,11 +77,12 @@ export class DetailsRestaurantComponent {
 
     let k:number = 1;
     for(let p in this.User.cos){
+
       k=k+1;
     }
 
     produs.id = k;
-    this.User.cos
+    produs.restaurant=this.restaurantName
     this.User.cos.push(produs);
     this.db.updateUser(this.User).subscribe(()=>{console.log('Update User');
     console.log(this.User.cos);
