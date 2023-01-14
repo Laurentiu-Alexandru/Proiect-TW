@@ -8,10 +8,12 @@
     font-size: 30px;
 }
 
-.box-logo {}
+.box-logo {margin-left: 13%;}
 
 .restaurant-logo {
-    margin-left: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .linie {
@@ -49,62 +51,88 @@
     margin-top: 5%;
     border: #143d59 5px solid;
     border-radius: 30px;
-    background-color: rgba(244, 180, 26, .7);
+    background-color: rgba(226, 226, 226, 0.7);
     height: 350px;
     padding-right: 15px;
-
+    float: left;
+    margin-right: 3%;
+    box-shadow: 4px 4px 4px 4px;
+    width: 30%;
 }
 
 .col-descriere {
-    font-size: 21px;
     text-align: left;
 }
 
 .titlu {
-
+    font-size: 21px;
+    font-weight: bold;
+    border-bottom: solid 2px black;
 }
 
 .descriere {
-
+    font-size: 15px;
 }
 
 .pret {
-
+    font-size: 25px;
+    text-align: right;
+    font-weight: bolder;
 }
 
-.col-image{
-align-self: center;
+.col-image {
+    align-self: center;
+    border-left: solid 2px black;
 }
 
 .imageBox {
     align-self: center;
+    box-shadow: 2px 2px 5px 5px;
 }
 
 .responsive {
     max-width: 100%;
     height: auto;
-  }
+}
 
-  @media only screen and (max-width: 1900px) {
+.column-meniu {
+    width: 80%;
+}
+
+.column-contact {
+    width: 5%;
+}
+
+.column-ads {
+    width: 15%;
+}
+
+
+@media only screen and (max-width: 1800px) {
+
     /* For mobile phones: */
-    [class*="col-descriere"] {
-        font-size: 16px;
+    [class*="produs-layout"] {
+        width: 45%;
     }
 
 }
 
-@media only screen and (max-width: 1300px) {
-    /* For mobile phones: */
-    [class*="col-descriere"] {
-        font-size: 10px;
-    }
 
+
+@media only screen and (max-width: 1050px) {
+
+    /* For mobile phones: */
+    [class*="produs-layout"] {
+        width: 70%;
+    }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 768px) {
+
     /* For mobile phones: */
-    [class*="col-descriere"] {
-        font-size: 8px;
+    [class*="produs-layout"] {
+        width: 100%;
+        height: 400px;
     }
 
 }

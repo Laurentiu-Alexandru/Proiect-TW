@@ -1,36 +1,37 @@
 <app-header></app-header>
 <div class="page-container">
     <div class="row" style="width: 100%">
-        <div class="column-contact" style="width: 25%">
+        <div class="column-contact">
 
         </div>
-        <div class="column-meniu" style="width: 50%">
+        <div class="column-meniu">
             <div *ngFor=" let restaurant of restaurants">
                 <div *ngIf=" restaurant.name == restaurantName.toString() ">
                     <div class="row" class="box-logo">
                         <img src="{{restaurant.banner_img}}" class="restaurant-logo">
                         <p class="linie"></p>
                     </div>
-                    <div class="meniu" style="width: 50%">
+                    <div class="meniu">
                         <div *ngFor=" let produs of restaurant.produse">
-                            <button class="produs-layout" style="width: 100% " (click)="addProdusToCart(produs)">
-                                <div class="row">
-                                    <div class="col-descriere" style="width: 60%">
+                            <button class="produs-layout" (click)="addProdusToCart(produs)">
+                                <div class="row" style="height: 90%">
+                                    <div class="col-descriere" style="width: 50%">
                                         <div class="titlu">
                                             <p>{{ produs.nume }}</p>
                                         </div>
                                         <div class="descriere">
                                             <p>{{ produs.ingrediente }}</p>
                                         </div>
-                                        <div class="pret">
-                                            <p>{{ produs.pret }}lei</p>
+                                    </div>
+                                    <div class="col-image" style="width: 50%">
+                                        <div class="imageBox">
+                                            <img src="{{produs.produs_img}}" class="responsive">
                                         </div>
                                     </div>
-                                    <div class="col-image" style="width: 40%">
-                                        <p class="imageBox">
-                                            <img src="{{produs.produs_img}}" class="responsive">
-                                        </p>
-
+                                </div>
+                                <div class="row">
+                                    <div class="pret">
+                                        <p>{{ produs.pret }}lei</p>
                                     </div>
                                 </div>
                             </button>
@@ -39,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="column-ads" style="width: 25%">
+        <div class="column-ads">
         </div>
     </div>
 </div>

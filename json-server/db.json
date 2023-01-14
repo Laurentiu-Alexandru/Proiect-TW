@@ -1,470 +1,493 @@
 {
-    "users": [{
-            "id": 1,
-            "username": "admin",
-            "email": "admin@admin.com",
-            "password": "admin",
-            "cos": [
-
-            ],
-            "card": {
-                "Owner_Name": "",
-                "Card_Number": "",
-                "Expiration_Date": "",
-                "CVV": ""
-            },
-            "comenzi": [
-
-            ],
-            "Adress": ""
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@admin.com",
+      "password": "admin",
+      "cos": [
+        {
+          "id": 1,
+          "nume": "Shaorma XXL de pui",
+          "ingrediente": "Lipie, carne, cartofi, salată de varză cu castraveți murați sau salată de crudități, maioneză, ketchup, tzatziki 740g",
+          "pret": 32.5,
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/shaorma.png"
         },
         {
-            "id": 2,
-            "username": "user2",
-            "cos": [{
-                    "id": 1,
-                    "nume": "Shaorma de Vită,curcan mare",
-                    "ingrediente": "Lipie, carne de vită curcan, cartofi, salată de varză cu castraveți murați sau salată de crudatăți, maioneză, ketchup 570g",
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Shaorma_de_vita_2.jpg",
-                    "pret": 29
-                },
-                {
-                    "id": 2,
-                    "nume": "Shaorma de Vită,curcan mică",
-                    "ingrediente": "Lipie, carne de vită curcan, cartofi, salată de varză cu castraveți murați sau salată de crudități, maioneză, ketchup 350g",
-                    "pret": 25,
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Shaorma_de_vita.jpg"
-                }
-            ],
-            "comenzi": [],
-            "card": {
-                "Owner_Name": "Jhon Smith",
-                "Card_Number": "1234123412341234",
-                "Expiration_Date": "2025-12",
-                "CVV": "123"
-            },
-            "Adress": "Delivery Address",
-            "email": "user2@user2.user2",
-            "password": "user2"
+          "id": 2,
+          "nume": "Meniu mediu crispy + racoritoare",
+          "ingrediente": "480g",
+          "pret": 38.5
         }
-    ],
-    "restaurants": [{
-            "id": 1,
-            "name": "Spartan",
-            "type": "comanda",
-            "specialitate": "Mâncare grecească",
-            "rating": 5,
-            "location": "Str. Wololoo, nr.1",
-            "produse": [{
-                    "id": 1,
-                    "nume": "Gyros pui",
-                    "ingrediente": "460g",
-                    "pret": 26.5,
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1067/Gyros_pui-vpb_.jpg"
-                },
-                {
-                    "id": 2,
-                    "nume": "Burger Apollo pui + cartofi",
-                    "ingrediente": "200g",
-                    "pret": 9.9,
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1067/apolo__cartofi.jpg"
-                },
-                {
-                    "id": 3,
-                    "nume": "Pita snitel",
-                    "ingrediente": "410g",
-                    "pret": 19.5
-                },
-                {
-                    "id": 4,
-                    "nume": "Crispy mediu",
-                    "ingrediente": "430g",
-                    "pret": 30.5
-                },
-                {
-                    "id": 5,
-                    "nume": "Meniu mediu crispy + racoritoare",
-                    "ingrediente": "480g",
-                    "pret": 38.5
-                }
-            ],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/tm-logo-spartan_6.png"
+      ],
+      "card": {
+        "Owner_Name": "",
+        "Card_Number": "",
+        "Expiration_Date": "",
+        "CVV": ""
+      },
+      "comenzi": [],
+      "Adress": ""
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "cos": [
+        {
+          "id": 1,
+          "nume": "Shaorma de Vită,curcan mare",
+          "ingrediente": "Lipie, carne de vită curcan, cartofi, salată de varză cu castraveți murați sau salată de crudatăți, maioneză, ketchup 570g",
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Shaorma_de_vita_2.jpg",
+          "pret": 29
         },
         {
-            "id": 2,
-            "name": "Antalya",
-            "specialitate": "Shaorma",
-            "type": "comanda",
-            "rating": 5,
-            "location": "Str. Wololoo, nr.2",
-            "produse": [{
-                    "id": 1,
-                    "nume": "Shaorma de Vită,curcan mică",
-                    "ingrediente": "Lipie, carne de vită curcan, cartofi, salată de varză cu castraveți murați sau salată de crudități, maioneză, ketchup 350g",
-                    "pret": 25,
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Shaorma_de_vita.jpg"
-                },
-                {
-                    "id": 2,
-                    "nume": "Shaorma XXL de pui",
-                    "ingrediente": "Lipie, carne, cartofi, salată de varză cu castraveți murați sau salată de crudități, maioneză, ketchup, tzatziki 740g",
-                    "pret": 32.5,
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/shaorma.png"
-                },
-                {
-                    "id": 3,
-                    "nume": "Shaorma de Vită,curcan mare",
-                    "ingrediente": "Lipie, carne de vită curcan, cartofi, salată de varză cu castraveți murați sau salată de crudatăți, maioneză, ketchup 570g",
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Shaorma_de_vita_2.jpg",
-                    "pret": 29
-                },
-                {
-                    "id": 4,
-                    "nume": "Kebap mic de pui",
-                    "ingrediente": "Pâine, carne, cartofi, salată de varză cu castraveți murați sau salată de crudități, maioneză, ketchup, tzatziki 390g",
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Kebab_de_pui_1.jpg",
-                    "pret": 22.5
-                },
-                {
-                    "id": 5,
-                    "nume": "Cartofi prajiti",
-                    "ingrediente": "160g",
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Cartofi_prajiti.jpg",
-                    "pret": 12.5
-                }
-            ],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-antalia.png"
-        },
-        {
-            "id": 3,
-            "name": "Mediteraneo",
-            "specialitate": "Pizza",
-            "type": "comanda",
-            "rating": 4,
-            "location": "Str. Wololoo, nr.2",
-            "produse": [{
-                    "id": 1,
-                    "nume": "Pizza Prosciutto",
-                    "ingrediente": "Aluat, sos de roșii, mozzarella, șuncă de porc, condimente 500g",
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1447/pizza-prosciutto-300x300.jpg",
-                    "pret": 34.9
-                },
-                {
-                    "id": 2,
-                    "nume": "Pizza Salami",
-                    "ingrediente": "Aluat, sos roșii, mozzarela, salam, condimente 480g",
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1447/pizza-salami-300x300.jpg",
-                    "pret": 39.9
-                },
-                {
-                    "id": 3,
-                    "nume": "Pizza Buffalla",
-                    "ingrediente": "Aluat, sos de roșii, buffalla,, busuioc, condimente  480g",
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1447/Pizza_Buffalla.jpg",
-                    "pret": 44.9
-                },
-                {
-                    "id": 4,
-                    "nume": "Kebab Mixt",
-                    "ingrediente": "Chifla, carne vita/pui, cartofi prajiti, salata varza, castraveti murati, rosii, salata verde, ceapa, patrunjel, sos mediteranean, ardei iute 300g",
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1447/Kebab_Vita_2.jpeg",
-                    "pret": 23.9
-                },
-                {
-                    "id": 5,
-                    "nume": "Pizza Calzone",
-                    "ingrediente": "Aluat, sos de roșii, mozzarella, ricotta(branza dulce), șuncă de porc, ciuperci, bacon, parmezan, condimente 500g",
-                    "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1447/pizza-calzone-300x300.jpg",
-                    "pret": 39.9
-                }
-            ],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/mediteraneo.jpg"
-        },
-        {
-            "id": 4,
-            "name": "Hrana Pământului",
-            "specialitate": "Mâncare vegană",
-            "type": "comanda",
-            "rating": 3.5,
-            "location": "Str. Wololoo, nr.2",
-            "produse": [{
-                    "id": 1,
-                    "nume": "Bol tibetan",
-                    "ingrediente": "pui",
-                    "pret": 28.5
-                },
-                {
-                    "id": 2,
-                    "nume": "Nuggets din conopida",
-                    "ingrediente": "pui",
-                    "pret": 16.9
-                },
-                {
-                    "id": 3,
-                    "nume": "Supa crema de linte rosie",
-                    "ingrediente": "pui",
-                    "pret": 11.2
-                },
-                {
-                    "id": 4,
-                    "nume": "Falafel meniu",
-                    "ingrediente": "pui",
-                    "pret": 36.5
-                },
-                {
-                    "id": 5,
-                    "nume": "Falafel pita",
-                    "ingrediente": "pui",
-                    "pret": 34.4
-                }
-            ],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-hrana-reloaded-2-.png"
-        },
-        {
-            "id": 5,
-            "name": "Pulcinella",
-            "specialitate": "Pizza ca în Italia",
-            "type": "comanda",
-            "rating": 4.5,
-            "location": "Str. Wololoo, nr.2",
-            "produse": [{
-                    "id": 1,
-                    "nume": "Calzone Fresco",
-                    "ingrediente": "pui",
-                    "pret": 46.5
-                },
-                {
-                    "id": 2,
-                    "nume": "Calzone Ragu Bolognese",
-                    "ingrediente": "pui",
-                    "pret": 43
-                },
-                {
-                    "id": 3,
-                    "nume": "Pizza Diavola",
-                    "ingrediente": "pui",
-                    "pret": 40
-                },
-                {
-                    "id": 4,
-                    "nume": "Pizza e Rucola",
-                    "ingrediente": "pui",
-                    "pret": 43
-                },
-                {
-                    "id": 5,
-                    "nume": "Pizza Buffalla",
-                    "ingrediente": "pui",
-                    "pret": 44.5
-                }
-            ],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-pulcinella.png"
-        },
-        {
-            "id": 6,
-            "name": "Urban King",
-            "specialitate": "Fastfood",
-            "type": "rezervare",
-            "rating": 4.7,
-            "location": "Str. Wololoo, nr.2",
-            "produse": [{
-                    "id": 1,
-                    "nume": "Big Boss",
-                    "ingrediente": "pui",
-                    "pret": 41
-                },
-                {
-                    "id": 2,
-                    "nume": "Le Burger",
-                    "ingrediente": "pui",
-                    "pret": 44.9
-                },
-                {
-                    "id": 3,
-                    "nume": "Royal Burger",
-                    "ingrediente": "pui",
-                    "pret": 44.5
-                },
-                {
-                    "id": 4,
-                    "nume": "Serbian Burger",
-                    "ingrediente": "pui",
-                    "pret": 41
-                },
-                {
-                    "id": 5,
-                    "nume": "Summer Burger",
-                    "ingrediente": "pui",
-                    "pret": 41
-                }
-            ],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/image0.jpeg"
-        },
-        {
-            "id": 7,
-            "name": "The Empanadas Factory",
-            "specialitate": "Patiserie Latino-Americană",
-            "type": "comanda",
-            "rating": 3,
-            "location": "Str. Wololoo, nr.2",
-            "produse": [{
-                    "id": 1,
-                    "nume": "Argentinian Single Combo",
-                    "ingrediente": "pui",
-                    "pret": 26.39
-                },
-                {
-                    "id": 2,
-                    "nume": "Chicken Beginner Combo",
-                    "ingrediente": "pui",
-                    "pret": 32
-                },
-                {
-                    "id": 3,
-                    "nume": "Spicy Combo",
-                    "ingrediente": "pui",
-                    "pret": 36.5
-                },
-                {
-                    "id": 4,
-                    "nume": "Single Meat Lover",
-                    "ingrediente": "pui",
-                    "pret": 28
-                },
-                {
-                    "id": 5,
-                    "nume": "Bloody Hot Combo",
-                    "ingrediente": "pui",
-                    "pret": 33.5
-                }
-            ],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/Empanada_logo_7.jpg"
-        },
-        {
-            "id": 8,
-            "name": "Cofetaria Naomi",
-            "specialitate": "Specialiști în deserturi",
-            "type": "rezervare",
-            "rating": 3.9,
-            "location": "Str. Wololoo, nr.2",
-            "produse": [{
-                    "id": 1,
-                    "nume": "Tort Fructe",
-                    "ingrediente": "pui",
-                    "pret": 11
-                },
-                {
-                    "id": 2,
-                    "nume": "Tort Choco Nuts",
-                    "ingrediente": "pui",
-                    "pret": 13.9
-                },
-                {
-                    "id": 3,
-                    "nume": "Tort Nuca",
-                    "ingrediente": "pui",
-                    "pret": 13.8
-                },
-                {
-                    "id": 4,
-                    "nume": "Ecler ciocolata",
-                    "ingrediente": "pui",
-                    "pret": 9.5
-                },
-                {
-                    "id": 5,
-                    "nume": "Amandina",
-                    "ingrediente": "pui",
-                    "pret": 8.5
-                },
-                {
-                    "id": 6,
-                    "nume": "Platou premium",
-                    "ingrediente": "pui",
-                    "pret": 98
-                }
-            ],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/rsz_logo_1_1_1.jpg"
-        },
-        {
-            "id": 9,
-            "name": "Ciolanarie",
-            "specialitate": "Mâncare de porc tradițională",
-            "type": "rezervare",
-            "rating": 5,
-            "location": "Str. Wololoo, nr.2",
-            "produse": [{
-                    "id": 1,
-                    "nume": "Supa crema de ciuperci",
-                    "ingrediente": "pui",
-                    "pret": 14
-                },
-                {
-                    "id": 2,
-                    "nume": "Ciolan Bavarez cu Varza Rosie",
-                    "ingrediente": "pui",
-                    "pret": 59.9
-                },
-                {
-                    "id": 3,
-                    "nume": "Ciolan si piure de cartofi cu tartufo",
-                    "ingrediente": "pui",
-                    "pret": 65.5
-                },
-                {
-                    "id": 4,
-                    "nume": "Ciolan si cartofi cu usturoi la cuptor",
-                    "ingrediente": "pui",
-                    "pret": 60
-                },
-                {
-                    "id": 5,
-                    "nume": "Varza calita cu mar si vin rosu",
-                    "ingrediente": "pui",
-                    "pret": 17.5
-                }
-            ],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-ciolanarie-cmyk-01.jpeg"
-        },
-        {
-            "id": 10,
-            "name": "Tinecz",
-            "type": "rezervare",
-            "specialitate": "Restaurant",
-            "rating": 2,
-            "location": "Str. Wololoo, nr.2",
-            "produse": [{
-                    "id": 1,
-                    "nume": "Sarmale banatene cu mamaliga, bacon si ardei",
-                    "ingrediente": "pui",
-                    "pret": 29.9
-                },
-                {
-                    "id": 2,
-                    "nume": "Paste carbonara + doza",
-                    "ingrediente": "pui",
-                    "pret": 29.9
-                },
-                {
-                    "id": 3,
-                    "nume": "Bulz banatean + doza",
-                    "ingrediente": "pui",
-                    "pret": 29.9
-                },
-                {
-                    "id": 4,
-                    "nume": "Ciorba de legume",
-                    "ingrediente": "pui",
-                    "pret": 17.9
-                },
-                {
-                    "id": 5,
-                    "nume": "Paste Aglio Oglio (de post)",
-                    "ingrediente": "pui",
-                    "pret": 31.9
-                }
-            ],
-            "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/f1ba253c-cd44-46b9-9b04-76a80a5128d9.png"
+          "id": 2,
+          "nume": "Shaorma de Vită,curcan mică",
+          "ingrediente": "Lipie, carne de vită curcan, cartofi, salată de varză cu castraveți murați sau salată de crudități, maioneză, ketchup 350g",
+          "pret": 25,
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Shaorma_de_vita.jpg"
         }
-    ]
+      ],
+      "comenzi": [],
+      "card": {
+        "Owner_Name": "Jhon Smith",
+        "Card_Number": "1234123412341234",
+        "Expiration_Date": "2025-12",
+        "CVV": "123"
+      },
+      "Adress": "Delivery Address",
+      "email": "user2@user2.user2",
+      "password": "user2"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Spartan",
+      "type": "comanda",
+      "specialitate": "Mâncare grecească",
+      "rating": 5,
+      "location": "Str. Wololoo, nr.1",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "Gyros pui",
+          "ingrediente": "460g",
+          "pret": 26.5,
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1067/Gyros_pui-vpb_.jpg"
+        },
+        {
+          "id": 2,
+          "nume": "Burger Apollo pui + cartofi",
+          "ingrediente": "200g",
+          "pret": 9.9,
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1067/apolo__cartofi.jpg"
+        },
+        {
+          "id": 3,
+          "nume": "Pita snitel",
+          "ingrediente": "410g",
+          "pret": 19.5
+        },
+        {
+          "id": 4,
+          "nume": "Crispy mediu",
+          "ingrediente": "430g",
+          "pret": 30.5
+        },
+        {
+          "id": 5,
+          "nume": "Meniu mediu crispy + racoritoare",
+          "ingrediente": "480g",
+          "pret": 38.5
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/tm-logo-spartan_6.png"
+    },
+    {
+      "id": 2,
+      "name": "Antalya",
+      "specialitate": "Shaorma",
+      "type": "comanda",
+      "rating": 5,
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "Shaorma de Vită,curcan mică",
+          "ingrediente": "Lipie, carne de vită curcan, cartofi, salată de varză cu castraveți murați sau salată de crudități, maioneză, ketchup 350g",
+          "pret": 25,
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Shaorma_de_vita.jpg"
+        },
+        {
+          "id": 2,
+          "nume": "Shaorma XXL de pui",
+          "ingrediente": "Lipie, carne, cartofi, salată de varză cu castraveți murați sau salată de crudități, maioneză, ketchup, tzatziki 740g",
+          "pret": 32.5,
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/shaorma.png"
+        },
+        {
+          "id": 3,
+          "nume": "Shaorma de Vită,curcan mare",
+          "ingrediente": "Lipie, carne de vită curcan, cartofi, salată de varză cu castraveți murați sau salată de crudatăți, maioneză, ketchup 570g",
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Shaorma_de_vita_2.jpg",
+          "pret": 29
+        },
+        {
+          "id": 4,
+          "nume": "Kebap mic de pui",
+          "ingrediente": "Pâine, carne, cartofi, salată de varză cu castraveți murați sau salată de crudități, maioneză, ketchup, tzatziki 390g",
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Kebab_de_pui_1.jpg",
+          "pret": 22.5
+        },
+        {
+          "id": 5,
+          "nume": "Cartofi prajiti",
+          "ingrediente": "160g",
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/33/Cartofi_prajiti.jpg",
+          "pret": 12.5
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-antalia.png"
+    },
+    {
+      "id": 3,
+      "name": "Mediteraneo",
+      "specialitate": "Pizza",
+      "type": "comanda",
+      "rating": 4,
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "Pizza Prosciutto",
+          "ingrediente": "Aluat, sos de roșii, mozzarella, șuncă de porc, condimente 500g",
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1447/pizza-prosciutto-300x300.jpg",
+          "pret": 34.9
+        },
+        {
+          "id": 2,
+          "nume": "Pizza Salami",
+          "ingrediente": "Aluat, sos roșii, mozzarela, salam, condimente 480g",
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1447/pizza-salami-300x300.jpg",
+          "pret": 39.9
+        },
+        {
+          "id": 3,
+          "nume": "Pizza Buffalla",
+          "ingrediente": "Aluat, sos de roșii, buffalla,, busuioc, condimente  480g",
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1447/Pizza_Buffalla.jpg",
+          "pret": 44.9
+        },
+        {
+          "id": 4,
+          "nume": "Kebab Mixt",
+          "ingrediente": "Chifla, carne vita/pui, cartofi prajiti, salata varza, castraveti murati, rosii, salata verde, ceapa, patrunjel, sos mediteranean, ardei iute 300g",
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1447/Kebab_Vita_2.jpeg",
+          "pret": 23.9
+        },
+        {
+          "id": 5,
+          "nume": "Pizza Calzone",
+          "ingrediente": "Aluat, sos de roșii, mozzarella, ricotta(branza dulce), șuncă de porc, ciuperci, bacon, parmezan, condimente 500g",
+          "produs_img": "https://tazzcdn.akamaized.net/uploads/menu/1447/pizza-calzone-300x300.jpg",
+          "pret": 39.9
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/mediteraneo.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Hrana Pământului",
+      "specialitate": "Mâncare vegană",
+      "type": "comanda",
+      "rating": 3.5,
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "Bol tibetan",
+          "ingrediente": "pui",
+          "pret": 28.5
+        },
+        {
+          "id": 2,
+          "nume": "Nuggets din conopida",
+          "ingrediente": "pui",
+          "pret": 16.9
+        },
+        {
+          "id": 3,
+          "nume": "Supa crema de linte rosie",
+          "ingrediente": "pui",
+          "pret": 11.2
+        },
+        {
+          "id": 4,
+          "nume": "Falafel meniu",
+          "ingrediente": "pui",
+          "pret": 36.5
+        },
+        {
+          "id": 5,
+          "nume": "Falafel pita",
+          "ingrediente": "pui",
+          "pret": 34.4
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-hrana-reloaded-2-.png"
+    },
+    {
+      "id": 5,
+      "name": "Pulcinella",
+      "specialitate": "Pizza ca în Italia",
+      "type": "comanda",
+      "rating": 4.5,
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "Calzone Fresco",
+          "ingrediente": "pui",
+          "pret": 46.5
+        },
+        {
+          "id": 2,
+          "nume": "Calzone Ragu Bolognese",
+          "ingrediente": "pui",
+          "pret": 43
+        },
+        {
+          "id": 3,
+          "nume": "Pizza Diavola",
+          "ingrediente": "pui",
+          "pret": 40
+        },
+        {
+          "id": 4,
+          "nume": "Pizza e Rucola",
+          "ingrediente": "pui",
+          "pret": 43
+        },
+        {
+          "id": 5,
+          "nume": "Pizza Buffalla",
+          "ingrediente": "pui",
+          "pret": 44.5
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-pulcinella.png"
+    },
+    {
+      "id": 6,
+      "name": "Urban King",
+      "specialitate": "Fastfood",
+      "type": "rezervare",
+      "rating": 4.7,
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "Big Boss",
+          "ingrediente": "pui",
+          "pret": 41
+        },
+        {
+          "id": 2,
+          "nume": "Le Burger",
+          "ingrediente": "pui",
+          "pret": 44.9
+        },
+        {
+          "id": 3,
+          "nume": "Royal Burger",
+          "ingrediente": "pui",
+          "pret": 44.5
+        },
+        {
+          "id": 4,
+          "nume": "Serbian Burger",
+          "ingrediente": "pui",
+          "pret": 41
+        },
+        {
+          "id": 5,
+          "nume": "Summer Burger",
+          "ingrediente": "pui",
+          "pret": 41
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/image0.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "The Empanadas Factory",
+      "specialitate": "Patiserie Latino-Americană",
+      "type": "comanda",
+      "rating": 3,
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "Argentinian Single Combo",
+          "ingrediente": "pui",
+          "pret": 26.39
+        },
+        {
+          "id": 2,
+          "nume": "Chicken Beginner Combo",
+          "ingrediente": "pui",
+          "pret": 32
+        },
+        {
+          "id": 3,
+          "nume": "Spicy Combo",
+          "ingrediente": "pui",
+          "pret": 36.5
+        },
+        {
+          "id": 4,
+          "nume": "Single Meat Lover",
+          "ingrediente": "pui",
+          "pret": 28
+        },
+        {
+          "id": 5,
+          "nume": "Bloody Hot Combo",
+          "ingrediente": "pui",
+          "pret": 33.5
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/Empanada_logo_7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Cofetaria Naomi",
+      "specialitate": "Specialiști în deserturi",
+      "type": "rezervare",
+      "rating": 3.9,
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "Tort Fructe",
+          "ingrediente": "pui",
+          "pret": 11
+        },
+        {
+          "id": 2,
+          "nume": "Tort Choco Nuts",
+          "ingrediente": "pui",
+          "pret": 13.9
+        },
+        {
+          "id": 3,
+          "nume": "Tort Nuca",
+          "ingrediente": "pui",
+          "pret": 13.8
+        },
+        {
+          "id": 4,
+          "nume": "Ecler ciocolata",
+          "ingrediente": "pui",
+          "pret": 9.5
+        },
+        {
+          "id": 5,
+          "nume": "Amandina",
+          "ingrediente": "pui",
+          "pret": 8.5
+        },
+        {
+          "id": 6,
+          "nume": "Platou premium",
+          "ingrediente": "pui",
+          "pret": 98
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/rsz_logo_1_1_1.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Ciolanarie",
+      "specialitate": "Mâncare de porc tradițională",
+      "type": "rezervare",
+      "rating": 5,
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "Supa crema de ciuperci",
+          "ingrediente": "pui",
+          "pret": 14
+        },
+        {
+          "id": 2,
+          "nume": "Ciolan Bavarez cu Varza Rosie",
+          "ingrediente": "pui",
+          "pret": 59.9
+        },
+        {
+          "id": 3,
+          "nume": "Ciolan si piure de cartofi cu tartufo",
+          "ingrediente": "pui",
+          "pret": 65.5
+        },
+        {
+          "id": 4,
+          "nume": "Ciolan si cartofi cu usturoi la cuptor",
+          "ingrediente": "pui",
+          "pret": 60
+        },
+        {
+          "id": 5,
+          "nume": "Varza calita cu mar si vin rosu",
+          "ingrediente": "pui",
+          "pret": 17.5
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/logo-ciolanarie-cmyk-01.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Tinecz",
+      "type": "rezervare",
+      "specialitate": "Restaurant",
+      "rating": 2,
+      "location": "Str. Wololoo, nr.2",
+      "produse": [
+        {
+          "id": 1,
+          "nume": "Sarmale banatene cu mamaliga, bacon si ardei",
+          "ingrediente": "pui",
+          "pret": 29.9
+        },
+        {
+          "id": 2,
+          "nume": "Paste carbonara + doza",
+          "ingrediente": "pui",
+          "pret": 29.9
+        },
+        {
+          "id": 3,
+          "nume": "Bulz banatean + doza",
+          "ingrediente": "pui",
+          "pret": 29.9
+        },
+        {
+          "id": 4,
+          "nume": "Ciorba de legume",
+          "ingrediente": "pui",
+          "pret": 17.9
+        },
+        {
+          "id": 5,
+          "nume": "Paste Aglio Oglio (de post)",
+          "ingrediente": "pui",
+          "pret": 31.9
+        }
+      ],
+      "banner_img": "https://tazzcdn.akamaized.net/uploads/logo/f1ba253c-cd44-46b9-9b04-76a80a5128d9.png"
+    }
+  ]
 }
