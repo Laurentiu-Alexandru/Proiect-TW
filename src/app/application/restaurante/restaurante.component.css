@@ -108,7 +108,7 @@ button[data-uid="filtre"] {
 
 .btn {
     font-weight: bold;
-    text-shadow: 4px 13px 13px #bd1b1b;
+    text-shadow: 0px 0px 13px #00a2ff;
 }
 
 @media only screen and (max-width: 1920px) {
@@ -127,10 +127,27 @@ button[data-uid="filtre"] {
     }
 }
 
+@media only screen and (max-width: 601px) {
+    /* For mobile phones: */
+    [class*="box"] {
+        margin-bottom: 16%;
+    }
+
+}
+
 @media only screen and (max-width: 900px) {
     /* For mobile phones: */
     [class*="box"] {
         margin-bottom: 16%;
+    }
+    [class*="column-ads"] {
+        width: 0%;
+    }
+    [class*="column-filters"] {
+        width: 25%
+    }
+    [class*="container-column-restaurants"] {
+        width: 75%;
     }
 
 }
