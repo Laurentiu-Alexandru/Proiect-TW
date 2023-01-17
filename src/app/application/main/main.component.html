@@ -6,16 +6,16 @@
 
                 <div class="row-dashboard" style="width: 100%">
                     <div class="col-dashboard">
-                        <h1 class="title-box">Restaurante:</h1>
+                        <h1 class="title-restaurant1">Restaurante:</h1>
                         <button class="button-cumparaturi" (click)="onRezerva()">
-                            <img class="box-restaurante" src="../../../assets/images/restaurant.png">
+                            <img class="restaurant-link" src="../../../assets/images/restaurant.png">
                         </button>
                     </div>
                 </div>
 
 
                 <div class="row" style="width: 100%">
-                    <h1 class="title-box">Cele mai bune restaurante! Comandă acum!!</h1>
+                    <h1 class="title-restaurant2">Cele mai bune restaurante! Comandă acum!!</h1>
                     <div class="column" style="width: 100%">
                         <div *ngFor=" let restaurant of restaurants; let i = index">
                             <div *ngIf="i < 4">
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                     </div>
-                    <h1 class="title-box">Cele mai bune restaurante! Rezervă acum!!</h1>
+                    <h1 class="title-restaurant2">Cele mai bune restaurante! Rezervă acum!!</h1>
                     <div class="column" style="width: 100%">
                         <div *ngFor=" let restaurant of restaurants; let j = index">
                             <div *ngIf="j < 4">
