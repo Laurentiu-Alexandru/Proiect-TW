@@ -11,7 +11,6 @@ ul li {
 }
 
 .page-container {
-    background-color: #f4b41a;
     padding-top: 220px;
     padding-bottom: 500px;
     font-size: 25px;
@@ -48,7 +47,6 @@ button[data-uid="filtre"] {
     border-right: 2px solid #143d59;
     width: 25%;
 }
-
 
 .column-ads {
     border-left: 2px solid #143d59;
@@ -101,23 +99,19 @@ button[data-uid="filtre"] {
     justify-content: center;
 }
 
-
 .restaurant-banner {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
 @media only screen and (max-width: 1900px) {
-
     /* For mobile phones: */
     [class*="box"] {
         margin-bottom: 9%;
     }
-
 }
 
 @media only screen and (max-width: 1150px) {
-
     /* For mobile phones: */
     [class*="box"] {
         margin-bottom: 12%;
@@ -125,19 +119,15 @@ button[data-uid="filtre"] {
 }
 
 @media only screen and (max-width: 900px) {
-
     /* For mobile phones: */
     [class*="box"] {
         margin-bottom: 16%;
     }
-
 }
 
 @media only screen and (max-width: 768px) {
-
     /* For mobile phones: */
     [class*="box"] {
         margin-bottom: 22%;
     }
-
 }

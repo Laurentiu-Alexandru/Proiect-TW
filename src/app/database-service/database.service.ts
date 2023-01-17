@@ -88,13 +88,20 @@ export class DatabaseService {
     return this.http.patch<User>(user_url, user, httpOptions);
   }
 
-  updateCos(user: User, cos: Produs[]): Observable<User>  {
-    const user_url = `${this.apiUrl_users}/${user.id + '.json'}`;
+  updateCos(user: User, cos: Produs): Observable<User>    {
+    const user_url = `${this.apiUrl_users}/${user.id + '/cos/' + cos.id + '.json'}`;
     return this.http.patch<User>(user_url, cos, httpOptions);
   }
 
-  updateComenzi(user: User, comenzi: Produs[]): Observable<User>  {
-    const user_url = `${this.apiUrl_users}/${user.id,'.json'}`;
+  updateComenzi(user: User, comenzi: Produs): Observable<User>   {
+    const user_url = `${this.apiUrl_users}/${user.id + '/comenzi/' + comenzi.id + '.json'}`;
     return this.http.patch<User>(user_url, comenzi, httpOptions);
   }
+
+  deleteCos(user: User): Observable<User>    {
+    const user_url = `${this.apiUrl_users}/${user.id + '/cos.json'}`;
+    return this.http.delete<User>(user_url, httpOptions);
+
+  }
+
 }

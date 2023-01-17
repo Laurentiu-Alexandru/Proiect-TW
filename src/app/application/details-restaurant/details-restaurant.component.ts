@@ -75,7 +75,7 @@ export class DetailsRestaurantComponent {
 
   addProdusToCart(produs: Produs) {
 
-    let k:number = 1;
+    let k:number = 0;
     for(let p in this.User.cos){
 
       k=k+1;
@@ -83,11 +83,12 @@ export class DetailsRestaurantComponent {
 
     produs.id = k;
     produs.restaurant=this.restaurantName
-    this.User.cos.push(produs);
-    this.db.updateUser(this.User).subscribe(()=>{console.log('Update User');
-    console.log(this.User.cos);
-    this.cos.filter((e) => e.id === produs.id);
+    if(this.User.cos != undefined){
+      this.User.cos.push(produs);
+    }
 
+    this.db.updateCos(this.User, produs).subscribe(()=>{console.log('Update User');
+    console.log(this.User.cos);
     this.router.navigate(['../../', 'cos'], {
       queryParams: { produs: produs.nume },
       relativeTo: this.route,

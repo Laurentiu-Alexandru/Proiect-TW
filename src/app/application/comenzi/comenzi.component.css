@@ -84,3 +84,9 @@ ul li {
 .footer {
     margin-top: 600px;
 }
+
+@media screen and (max-width: 580px) {
+    .container {
+        margin-top: 300px;
+    }
+}

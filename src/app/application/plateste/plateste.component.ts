@@ -64,18 +64,24 @@ export class PlatesteComponent {
     this.comenzi_updated = this.User.comenzi;
 
     for(let i = 0; i < this.User.cos.length; i++){
-      this.User.comenzi.push(this.User.cos[i])
+      if(this.User.comenzi != undefined){
+        this.User.comenzi.push(this.User.cos[i])
+      }
+      console.log("Wololooo")
+      this.db.updateComenzi(this.User, this.User.comenzi[i]).subscribe(( )=>{
+        console.log(this.User);
+
+    });
     }
     let k = this.User.cos.length;
     for(let i = 0; i < k; i++){
       this.User.cos.pop();
     }
-
-
-    this.db.updateUser(this.User).subscribe(( )=>{
+    this.db.deleteCos(this.User).subscribe(( )=>{
       console.log(this.User);
-      this.router.navigate(['loading']);
     });
+
+    this.router.navigate(['loading']);
 
   }
 
