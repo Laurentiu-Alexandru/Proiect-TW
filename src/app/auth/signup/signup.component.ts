@@ -57,7 +57,8 @@ export class SignupComponent implements OnInit {
 
     const pattern = "^[A-Za-z0-9]+@[a-z]+\.[a-z]{2,3}";
 
-    for(let i = 1; i <= this.users.length + 1; i++){
+    for(let i = 0; i < this.users.length+1; i++){
+
       this.newUser.id = i;
     }
 
@@ -87,8 +88,7 @@ export class SignupComponent implements OnInit {
       this.newUser.password = value.password;
     }
 
-    this.http.post<User>(this.json.apiUrl_users, this.newUser, httpOptions).subscribe((newUser: User) => {this.newUser = newUser; console.log(this.newUser)});;
-
+    this.json.createUser(this.newUser).subscribe();
 
     this.router.navigate(['login']);
 

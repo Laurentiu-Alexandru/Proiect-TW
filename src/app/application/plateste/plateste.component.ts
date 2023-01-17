@@ -68,7 +68,7 @@ export class PlatesteComponent {
         this.User.comenzi.push(this.User.cos[i])
       }
       console.log("Wololooo")
-      this.db.updateComenzi(this.User, this.User.comenzi[i]).subscribe(( )=>{
+      this.db.updateComenzi(this.User, this.User.cos[i]).subscribe(( )=>{
         console.log(this.User);
 
     });

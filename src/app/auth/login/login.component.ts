@@ -68,11 +68,12 @@ export class LoginComponent implements OnInit {
     private route: ActivatedRoute,
     private auth: AuthentificationService,
     private json: DatabaseService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.json.getUsers().subscribe((user: User[]) => (this.users = user));
     sessionStorage.clear();
+
   }
 
   authUser(form: NgForm) {
