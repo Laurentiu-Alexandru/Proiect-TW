@@ -29,7 +29,7 @@ export class ComenziComponent {
     card: this.user_card,
     Adress: '',
   };
-  comenzi: Produs[] =[];
+  comenzi: Produs[] = [];
 
   ngOnInit(): void {
     this.db.getUser(this.user_id).subscribe((user: User) => {

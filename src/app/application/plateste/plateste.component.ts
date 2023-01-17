@@ -68,7 +68,10 @@ export class PlatesteComponent {
         this.User.comenzi.push(this.User.cos[i])
       }
       console.log("Wololooo")
-      this.User.cos[i].id = this.User.comenzi.length;
+      if(this.User.comenzi != undefined){
+      this.User.cos[i].id = this.User.comenzi.length-1;
+      }
+
       this.db.updateComenzi(this.User, this.User.cos[i]).subscribe(( )=>{
         console.log(this.User);
 
