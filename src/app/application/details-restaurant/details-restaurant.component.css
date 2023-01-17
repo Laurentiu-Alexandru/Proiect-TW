@@ -108,22 +108,34 @@
 }
 
 
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1920px) {
 
     /* For mobile phones: */
     [class*="produs-layout"] {
-        width: 45%;
+        width: 39%;
+        margin-left: 4%;
     }
 
 }
 
 
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1024px) {
 
     /* For mobile phones: */
     [class*="produs-layout"] {
-        width: 70%;
+        margin-left: 6%;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+
+    /* For mobile phones: */
+    [class*="produs-layout"] {
+        margin-left: 3%;
+    }
+    [class*="box-logo"] {
+        margin-left: 20%;
     }
 }
 
