@@ -104,9 +104,8 @@ button[data-uid="filtre"] {
     border-top-right-radius: 15px;
 }
 
-<<<<<<< Updated upstream
-@media only screen and (max-width: 1900px) {
-=======
+
+
 .btn {
     font-weight: bold;
     text-shadow: 4px 13px 13px #bd1b1b;
@@ -114,55 +113,26 @@ button[data-uid="filtre"] {
 
 @media only screen and (max-width: 1920px) {
 
->>>>>>> Stashed changes
     /* For mobile phones: */
     [class*="box"] {
         margin-bottom: 7%;
-
     }
 }
 
-<<<<<<< Updated upstream
-@media only screen and (max-width: 1150px) {
-    /* For mobile phones: */
-=======
+
 @media only screen and (max-width: 1024px) {
->>>>>>> Stashed changes
+
     [class*="box"] {
         margin-bottom: 10%;
     }
 }
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 @media only screen and (max-width: 900px) {
     /* For mobile phones: */
     [class*="box"] {
         margin-bottom: 16%;
     }
-<<<<<<< Updated upstream
-=======
-}
 
-@media only screen and (max-width: 601px) {
-    /* For mobile phones: */
-    [class*="box"] {
-        margin-bottom: 20%;
-        margin-left: 10%;
-    }
-    [class*="column-ads"] {
-        width: 0%;
-    }
-    [class*="container-column-restaurants"] {
-        width: 75%;
-    }
-    [class*="column-filters"] {
-        width: 25%;
-    }
-
->>>>>>> Stashed changes
 }
 
 @media only screen and (max-width: 768px) {
