@@ -104,17 +104,14 @@ export class DatabaseService {
     return this.http.patch<User>(user_url, comenzi, httpOptions);
   }
 
-
   deleteUser(user: User): Observable<User>    {
     const user_url = `${this.apiUrl_users}/${user.id + '/.json'}`;
     return this.http.delete<User>(user_url, httpOptions);
-
   }
 
   deleteCos(user: User): Observable<User>    {
     const user_url = `${this.apiUrl_users}/${user.id + '/cos.json'}`;
     return this.http.delete<User>(user_url, httpOptions);
-
   }
 
 }
