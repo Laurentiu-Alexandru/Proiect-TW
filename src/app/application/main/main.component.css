@@ -13,7 +13,6 @@
     width: 75%;
 }
 
-
 .box {
     width: 220px;
     height: 230px;
@@ -125,20 +124,19 @@
         margin-left: 15%;
         margin-top: 10%;
     }
-    [class*="title-restaurant2"]{
+    [class*="title-restaurant2"] {
         font-size: 27px;
         margin-bottom: -10%;
         margin-left: 25%;
         margin-top: 10%;
     }
-    [class*="restaurant-link"]{
+    [class*="restaurant-link"] {
         margin-bottom: -5%;
         margin-left: -5%;
     }
-    [class*="title-restaurant1"]{
+    [class*="title-restaurant1"] {
         margin-left: -10%;
     }
-
 }
 
 @media only screen and (max-width: 1024px) {

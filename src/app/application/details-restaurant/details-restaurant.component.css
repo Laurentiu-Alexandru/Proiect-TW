@@ -4,11 +4,14 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 200px;
+    margin-left: 50px;
     padding: 30px 15px;
     font-size: 30px;
 }
 
-.box-logo {margin-left: 13%;}
+.box-logo {
+    margin-left: 13%;
+}
 
 .restaurant-logo {
     display: block;
@@ -107,29 +110,35 @@
     width: 15%;
 }
 
+.border {
+    border: 1px solid black;
+    background-color: rgba(244, 180, 26, 0.75);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    color: white;
+}
 
 @media only screen and (max-width: 1920px) {
-
     /* For mobile phones: */
     [class*="produs-layout"] {
         width: 39%;
         margin-left: 4%;
     }
-
 }
 
-
-
 @media only screen and (max-width: 1024px) {
-
     /* For mobile phones: */
     [class*="produs-layout"] {
         margin-left: 6%;
     }
+    [class*="column-ads"] {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 601px) {
-
     /* For mobile phones: */
     [class*="produs-layout"] {
         margin-left: 3%;
@@ -140,11 +149,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-
     /* For mobile phones: */
     [class*="produs-layout"] {
         width: 100%;
         height: 400px;
     }
-
 }

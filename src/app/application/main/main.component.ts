@@ -29,8 +29,12 @@ export class MainComponent {
       {
         this.checkType(restaurant);
       }
-   
+
     })
+  }
+
+  gotoRinder(){
+    this.router.navigate(['rinder']);
   }
 
   onRezerva() {
@@ -57,7 +61,7 @@ export class MainComponent {
        for(let i = 0; i < restaurante.length - 1; i++)
        {
            let min = i;
-           
+
            for(let j = i + 1; j < restaurante.length; j++)
            {
                if(restaurante[j].rating > restaurante[min].rating)

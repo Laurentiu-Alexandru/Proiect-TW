@@ -24,7 +24,30 @@
             src: url('../src/assets/fonts/Charcoal-pem1.ttf');
         }
     </style>
-
+    <style>
+        #mySidenav button {
+            margin-top: 300px;
+            border: 1px solid black;
+            left: -80px;
+            transition: 0.3s;
+            padding: 15px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border-radius: 0 5px 5px 0;
+            position: fixed;
+        }
+        
+        #mySidenav button:hover {
+            left: 0;
+        }
+        
+        #rinder {
+            top: 20px;
+            background-color: orange;
+        }
+    </style>
     <script>
         // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
         window.onscroll = function() {
@@ -47,7 +70,7 @@
 
         function filterSelection(c) {
             var x, i;
-            x = document.getElementsByClassName("restaurant-list-element");
+            x = document.getElementsByClassName("box");
             if (c == "all") c = "";
             for (i = 0; i < x.length; i++) {
                 w3RemoveClass(x[i], "show");

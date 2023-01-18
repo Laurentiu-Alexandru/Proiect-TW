@@ -1,19 +1,28 @@
 <app-header></app-header>
+<div id="mySidenav" class="sidenav">
+    <button id="rinder" (click)="gotoRinder()">
+    <h4>Rinder</h4><img src="../../../assets/images/rinder.png" style="width:100%"></button>
+</div>
 <div class="page-container" style="width: 100%">
 
-    <div class="row">
-        <div class="column-filters">
-            <div id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')"> Show all</button><br>
-                <button class="btn" onclick="filterSelection('Mâncare grecească')"> Fastfood</button><br>
-                <button class="btn" onclick="filterSelection('Shaorma')"> Salate</button><br>
+    <div class="row border">
+        <div class="column-filters ">
+            <div class="border" id="myBtnContainer ">
+                <button class="btn" onclick="filterSelection('all')"> Show all</button><br>
+                <button class="btn" onclick="filterSelection('Fastfood')"> Fastfood</button><br>
+                <button class="btn" onclick="filterSelection('Vegan')"> Vegan</button><br>
                 <button class="btn" onclick="filterSelection('Pizza')"> Peste</button><br>
-                <button class="btn" onclick="filterSelection('Mâncare vegană')"> Pizza</button><br>
+                <button class="btn" onclick="filterSelection('Deserturi')"> Deserturi</button><br>
+                <button class="btn" onclick="filterSelection('Traditionala')"> Traditionala</button><br>
+
+            </div>
+            <div class="column-ads">
+                <img style=" width: 9.5vw; height: 80vh" src="../../../assets/images/Ads.gif">
             </div>
         </div>
-        <div class="container-column-restaurants">
+        <div class="container-column-restaurants ">
             <div *ngFor=" let restaurant of restaurants; let j = index">
-                <div class="box">
+                <div class="box {{restaurant.filtre}} show">
                     <div (click)="goToRestaurant(restaurant.name)" class="box-button">
                         <img src="{{restaurant.banner_img}}" alt="buttonpng" class="restaurant-banner">
                         <div class="card-body">
@@ -23,8 +32,7 @@
                 </div>
             </div>
         </div>
-        <div class="column-ads">
-        </div>
+
     </div>
 </div>
 

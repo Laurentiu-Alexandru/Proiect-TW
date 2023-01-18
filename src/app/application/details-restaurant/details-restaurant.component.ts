@@ -73,6 +73,9 @@ export class DetailsRestaurantComponent {
     });
   }
 
+  gotoRinder(){
+    this.router.navigate(['ridner']);
+  }
   addProdusToCart(produs: Produs) {
 
     let k:number = 0;

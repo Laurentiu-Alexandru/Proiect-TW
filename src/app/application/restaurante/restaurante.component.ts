@@ -25,7 +25,9 @@ export class RestauranteComponent {
       console.log(restaurants)
     })
   }
-
+  gotoRinder(){
+    this.router.navigate(['ridner']);
+  }
   goToRestaurant(name: String) {
     this.router.navigate(['../','restaurante', 'service'], { queryParams: { restaurant: name}, relativeTo: this.route});
   }

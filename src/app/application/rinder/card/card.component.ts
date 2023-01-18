@@ -1,9 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { trigger, keyframes, animate, transition } from "@angular/animations";
 import * as kf from './keyframes';
-import User from 'src/app/application/rinder/card/user';
-import data from './users.json';
 import { Subject } from 'rxjs';
+import { Restaurant } from 'src/app/database-service/restaurant';
+import { DatabaseService } from 'src/app/database-service/database.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -20,7 +21,7 @@ import { Subject } from 'rxjs';
 })
 export class CardComponent {
 
-  public users: User[] = data;
+  public restaurants: Restaurant[] = [];
   public index = 0;
   @Input()
   parentSubject!: Subject<any>;
@@ -28,18 +29,35 @@ export class CardComponent {
 
 
   animationState!: string;
-  constructor() { }
+  constructor(private json: DatabaseService, private router: Router) { }
 
   ngOnInit() {
     this.parentSubject.subscribe(event => {
       this.startAnimation(event)
     });
+
+    this.json.getRestaurants().subscribe((restaurants: Restaurant[])=>{
+      this.restaurants = restaurants;
+      console.log(restaurants)
+    })
   }
 
   startAnimation(state: string) {
     if (!this.animationState) {
       this.animationState = state;
+      this.restaurants.shift();
     }
+    if(this.restaurants.length == 0){
+      this.router.navigate(['main']);
+    }
+
+    if(state == "swipeleft"){
+      console.log("X")
+    }
+    if(state == "swiperight"){
+      console.log("<3")
+    }
+
   }
 
   resetAnimationState(state: any) {
