@@ -45,7 +45,7 @@ button[data-uid="filtre"] {
 .column-filters {
     float: left;
     border-right: 2px solid #143d59;
-    width: 15%;
+    width: 25%;
 }
 
 .column-ads {
@@ -108,7 +108,7 @@ button[data-uid="filtre"] {
 }
 
 .container-column-restaurants {
-    width: 60%;
+    width: 75%;
     justify-content: center;
     margin-right: auto;
 }
@@ -122,13 +122,17 @@ button[data-uid="filtre"] {
     font-weight: bold;
     color: white;
     text-shadow: 5px 5px 15px black;
+    text-align: left;
+    border: none;
 }
 
 .btn:hover {
     color: black;
+
 }
 
 @media only screen and (max-width: 1920px) {
+
     /* For mobile phones: */
     [class*="box"] {
         margin-bottom: 7%;
@@ -138,36 +142,61 @@ button[data-uid="filtre"] {
 @media only screen and (max-width: 1024px) {
     [class*="box"] {
         margin-bottom: 10%;
+        width: 200px;
+        margin-left: 10%;
+    }
+
+    [class*="btn"] {
+        margin-left: -50%;
     }
 }
 
 @media only screen and (max-width: 601px) {
+
+    /* For mobile phones: */
+    [class*="box"] {
+        margin-bottom: 16%;
+        margin-left: 4%;
+    }
+
+    [class*="btn"] {
+        margin-left: -50%;
+    }
+
+    [id*="myBtnContainer"] {
+        width: 140px;
+        margin-left: -65%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
     /* For mobile phones: */
     [class*="box"] {
         margin-bottom: 16%;
     }
-    @media only screen and (max-width: 900px) {
-        /* For mobile phones: */
-        [class*="box"] {
-            margin-bottom: 16%;
-        }
-        [class*="column-ads"] {
-            width: 0%;
-        }
-        [class*="column-filters"] {
-            width: 25%
-        }
-        [class*="container-column-restaurants"] {
-            width: 75%;
-        }
-        [class*="column-ads"] {
-            display: none;
-        }
+
+    [class*="column-ads"] {
+        width: 0%;
     }
-    @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
-        [class*="box"] {
-            margin-bottom: 22%;
-        }
+
+    [class*="column-filters"] {
+        width: 25%
+    }
+
+    [class*="container-column-restaurants"] {
+        width: 75%;
+    }
+
+    [class*="column-ads"] {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="box"] {
+        margin-bottom: 22%;
     }
 }

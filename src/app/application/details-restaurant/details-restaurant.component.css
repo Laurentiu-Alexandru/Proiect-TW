@@ -92,7 +92,6 @@
     .pret {
         font-size: 25px;
         margin-left: 35px;
-        text-align: left;
         font-weight: bolder;
     }
 
@@ -158,6 +157,9 @@
         }
         [class*="column-ads"] {
             display: none;
+        }
+        [class*="titlu"] {
+           font-size: 20px;
         }
     }
 
