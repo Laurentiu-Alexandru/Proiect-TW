@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { User } from './user';
 import { Restaurant } from './restaurant';
 import { Produs } from './produs';
+import { Filter } from './filter';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -63,11 +64,16 @@ export class DatabaseService {
 
   // FIREBASE DATABASE
   apiUrl_users = 'https://proiect-tw01-default-rtdb.europe-west1.firebasedatabase.app/users';
+  apiUrl_filters = 'https://proiect-tw01-default-rtdb.europe-west1.firebasedatabase.app/filters';
   apiUrl_restaurants = 'https://proiect-tw01-default-rtdb.europe-west1.firebasedatabase.app/restaurants';
 
   getUsers(): Observable<User[]> {
     return this.http.get<User[]>(this.apiUrl_users + '.json');
   }
+  getFilters(): Observable<Filter[]> {
+    return this.http.get<Filter[]>(this.apiUrl_filters + '.json');
+  }
+
 
   getUser(User_Id: number): Observable<User> {
     const user_url = `${this.apiUrl_users}/${User_Id + '.json'}`;

@@ -54,12 +54,15 @@ export class LoginComponent implements OnInit {
     CVV: 0,
   }
 
-  newUser: User = {
+  preferences: string[] =[]
+
+  User: User = {
     id: 0,
     username: '',
     cos: [],
     comenzi: [],
     card: this.user_card,
+    preferences: this.preferences,
     Adress: '',
   };
 
@@ -68,7 +71,7 @@ export class LoginComponent implements OnInit {
     private route: ActivatedRoute,
     private auth: AuthentificationService,
     private json: DatabaseService
-  ) { }
+  ) {this.json.getUsers().subscribe((user: User[]) => (this.users = user)); }
 
   ngOnInit(): void {
     this.json.getUsers().subscribe((user: User[]) => (this.users = user));

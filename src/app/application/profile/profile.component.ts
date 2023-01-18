@@ -19,16 +19,20 @@ export class ProfileComponent {
     Expiration_Date: '',
     CVV: 0,
   }
+
+  preferences: string[] =[]
+
   User: User = {
     id: 0,
     username: '',
     cos: [],
     comenzi: [],
     card: this.user_card,
+    preferences: this.preferences,
     Adress: '',
   };
 
-
+  card_number = '';
   constructor(
     private router: Router,
     private route: ActivatedRoute,
@@ -42,6 +46,7 @@ export class ProfileComponent {
   ngOnInit(): void {
     this.db.getUser(this.user_id).subscribe((user: User) => {
       this.User = user;
+      this.card_number = "xxxx-xxxx-xxxx-" + this.User.card.Card_Number.substring(12, 16);
     });
   }
 

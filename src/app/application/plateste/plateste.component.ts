@@ -26,12 +26,15 @@ export class PlatesteComponent {
     CVV: 0,
   }
 
+  preferences: string[] =[]
+
   User: User = {
     id: 0,
     username: '',
     cos: [],
     comenzi: [],
     card: this.user_card,
+    preferences: this.preferences,
     Adress: '',
   };
 
@@ -39,6 +42,7 @@ export class PlatesteComponent {
   produse: Produs[] =[];
 
   comenzi_updated: Produs[] = [];
+
 
 
   Plateste(form: NgForm){
@@ -74,6 +78,11 @@ export class PlatesteComponent {
 
       this.db.updateComenzi(this.User, this.User.cos[i]).subscribe(( )=>{
         console.log(this.User);
+
+        this.db.updateUser(this.User).subscribe(( )=>{
+          console.log(this.User);
+
+      });
 
     });
 

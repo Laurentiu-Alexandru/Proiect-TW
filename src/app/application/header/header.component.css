@@ -10,8 +10,17 @@
 }
 
 .logo {
-    color: #f4b41a;
-    letter-spacing: 2px;
+    font-family: "Brush Script MT", cursive;
+    color: white;
+    font-size: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.logo:hover {
+    transition: 0.5s;
+    color: black;
 }
 
 #navbar button {
@@ -22,29 +31,30 @@
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
 }
 
 #navbar #logo {
-    font-size: 35px;
-    font-weight: bold;
     transition: 0.4s;
 }
 
 #navbar button:hover {
-    background-color: #ddd;
+    background-color: orange;
     color: black;
 }
 
 #navbar button.active {
-    background-color: dodgerblue;
+    background-color: orange;
     color: white;
 }
 
 #navbar-right {
     float: right;
+    color: white;
+    font-size: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 @media screen and (max-width: 580px) {

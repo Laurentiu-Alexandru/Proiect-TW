@@ -37,12 +37,15 @@ export class SignupComponent implements OnInit {
     CVV: 0,
   }
 
+  preferences: string[] =[]
+
   newUser: User = {
     id: 0,
     username: '',
     cos: [],
     comenzi: [],
     card: this.user_card,
+    preferences: this.preferences,
     Adress: '',
   };
 

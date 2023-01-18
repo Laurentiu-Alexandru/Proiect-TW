@@ -21,12 +21,15 @@ export class ComenziComponent {
     CVV: 0,
   }
 
+  preferences: string[] =[]
+
   User: User = {
     id: 0,
     username: '',
     cos: [],
     comenzi: [],
     card: this.user_card,
+    preferences: this.preferences,
     Adress: '',
   };
   comenzi: Produs[] = [];

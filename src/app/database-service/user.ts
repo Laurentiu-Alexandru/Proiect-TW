@@ -8,6 +8,7 @@ export interface User{
   password?: string;
   cos: Produs[];
   comenzi: Produs[];
+  preferences: string[];
   card: Card;
   Adress: string;
 }

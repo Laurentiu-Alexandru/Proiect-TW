@@ -11,7 +11,7 @@
                 <button class="btn" onclick="filterSelection('all')"> Show all</button><br>
                 <button class="btn" onclick="filterSelection('Fastfood')"> Fastfood</button><br>
                 <button class="btn" onclick="filterSelection('Vegan')"> Vegan</button><br>
-                <button class="btn" onclick="filterSelection('Pizza')"> Peste</button><br>
+                <button class="btn" onclick="filterSelection('Pizza')"> Pizza</button><br>
                 <button class="btn" onclick="filterSelection('Deserturi')"> Deserturi</button><br>
                 <button class="btn" onclick="filterSelection('Traditionala')"> Traditionala</button><br>
 
@@ -22,8 +22,8 @@
         </div>
         <div class="container-column-restaurants ">
             <div *ngFor=" let restaurant of restaurants; let j = index">
-                <div class="box {{restaurant.filtre}} show">
-                    <div (click)="goToRestaurant(restaurant.name)" class="box-button">
+                <div id="{{restaurant.filtre}}" class="box {{restaurant.filtre}}  ">
+                    <div (click)="goToRestaurant(restaurant.name, restaurant.id)" class="box-button">
                         <img src="{{restaurant.banner_img}}" alt="buttonpng" class="restaurant-banner">
                         <div class="card-body">
                             <h5 class="nume-restaurant">{{restaurant.name}}</h5>

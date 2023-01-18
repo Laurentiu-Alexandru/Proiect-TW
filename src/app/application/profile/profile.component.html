@@ -5,13 +5,20 @@
 <div class="card">
     <img src="../../../assets/images/img_avatar.png" alt="John" style="width:100%">
     <h1>{{username}}</h1>
-    <p class="title">{{username}} User</p>
-    <p>UVT BEST</p>
-    <div style="margin: 24px 0;">
-        <a href="#"><i class="fa fa-dribbble"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
+
+    <p class="title">Email: {{User.email}}</p>
+
+    <p class="title">Food preferences: </p>
+    <div *ngFor="let i of User.preferences">
+        <h6>{{i}}</h6>
+    </div><br>
+    <div *ngIf="User.card.Owner_Name != ''">
+        <p class="title">Card information:</p>
+
+        <h6>{{User.card.Owner_Name}} </h6>
+        <h6>{{card_number}} </h6>
+        <!-- <h6>{{User.card.Expiration_Date}} </h6>
+        <h6>{{User.card.CVV}} </h6> -->
     </div>
     <p><button>Edit</button></p>
     <p><button (click)="Delete()">Delete</button></p>

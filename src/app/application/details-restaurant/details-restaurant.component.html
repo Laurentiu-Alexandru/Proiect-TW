@@ -1,30 +1,29 @@
 <app-header></app-header>
 <div id="mySidenav" class="sidenav">
     <button id="rinder" (click)="gotoRinder()">
-      <h4>Rinder</h4><img src="../../../assets/images/rinder.png" style="width:100%"></button>
+      <h4>Rinder</h4><img src="../../../assets/images/rinder.png" style="width:100%;"></button>
 </div>
 <div class="page-container border">
     <div class="row" style="width: 100%">
-        <div class="column-contact">
 
-        </div>
         <div class="column-meniu">
             <div *ngFor=" let restaurant of restaurants">
                 <div *ngIf=" restaurant.name == restaurantName.toString() ">
                     <div class="row" class="box-logo">
                         <img src="{{restaurant.banner_img}}" class="restaurant-logo">
+                        <h1 class=" restaurant-name ">{{restaurantName}}</h1>
                         <p class="linie"></p>
                     </div>
                     <div class="meniu">
                         <div *ngFor=" let produs of restaurant.produse">
                             <button class="produs-layout" (click)="addProdusToCart(produs)">
-                                <div class="row" style="height: 90%">
+                                <div class="row">
+                                   <div class="titlu">
+                                    <p>{{ produs.nume }}</p>
+                                    </div>
                                     <div class="col-descriere" style="width: 50%">
-                                        <div class="titlu">
-                                            <p>{{ produs.nume }}</p>
-                                        </div>
                                         <div class="descriere">
-                                            <p>{{ produs.ingrediente }}</p>
+                                            <p><b>Ingrediente:</b> {{ produs.ingrediente }}</p>
                                         </div>
                                     </div>
                                     <div class="col-image" style="width: 50%">
@@ -32,10 +31,8 @@
                                             <img src="{{produs.produs_img}}" class="responsive">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
                                     <div class="pret">
-                                        <p>{{ produs.pret }}lei</p>
+                                      <p>{{ produs.pret }}lei </p>
                                     </div>
                                 </div>
                             </button>
@@ -45,7 +42,7 @@
             </div>
         </div>
         <div class="column-ads">
-            <img style=" width: 13vw; height: 80vh" src="../../../assets/images/Ads.gif">
+            <img style=" width: 13vw; height: 80vh;  border: 3px solid black; margin-top: 400px;" src="../../../assets/images/Ads.gif ">
         </div>
     </div>
 </div>
